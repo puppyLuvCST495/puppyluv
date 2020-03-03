@@ -18,5 +18,5 @@ We want to develop an app that matches people with the perfect dog breed. The la
 The goal with the app is to quiz the future owner to be able to best find the breed that actually fits with the lifestyle and personality, and then provide them with a few places close by where they can find and adopt their new puppy.
 
 ## 3. Paper MockUps
-<a href="https://imgur.com/pdOGWRw"><img src="https://i.imgur.com/pdOGWRw.jpg" title="source: imgur.com" /></a>
+<a href="https://imgur.com/pdOGWRw"><img src="https://i.imgur.com/pdOGWRw.jpg" title="source: imgur.com" width="280"/></a>
 

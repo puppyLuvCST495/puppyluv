@@ -3,7 +3,6 @@
 1. Team Members
 2. Project Objective
 3. Paper Mockups
-4.
 
 
 ## 1. Members of the team
@@ -19,4 +18,7 @@ The goal with the app is to quiz the future owner to be able to best find the br
 
 ## 3. Paper MockUps
 <a href="https://imgur.com/pdOGWRw"><img src="https://i.imgur.com/pdOGWRw.jpg" title="source: imgur.com" width="280"/></a>
+<a href="https://imgur.com/Z2EDqzB"><img src="https://i.imgur.com/Z2EDqzB.jpg" title="source: imgur.com" width="280"/></a>
+<a href="https://imgur.com/unCHwLo"><img src="https://i.imgur.com/unCHwLo.jpg" title="source: imgur.com" width="280"/></a>
+<a href="https://imgur.com/XdFUk0k"><img src="https://i.imgur.com/XdFUk0k.jpg" title="source: imgur.com" width="280"/></a>
 

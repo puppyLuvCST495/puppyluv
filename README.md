@@ -1,8 +1,8 @@
 # PuppyLuv
 ## Table of Contents
-1. [Overview] (#Overview)
-2. [Project Objective] (#Project-Objective)
-3. [Paper Mockups] (#Paper-MockUps)
+1.[Overview](#Overview)
+1.[Project Objective](#Project-Objective)
+1.[Paper Mockups](#Paper-MockUps)
 
 
 ## Overview 

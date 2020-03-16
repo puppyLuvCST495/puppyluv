@@ -99,7 +99,14 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
+- Parse (User login and log out) 
+- Will most probably use Parse for storing user results and maybe to create databases with info about breeds. 
+(If not might, we might use firebase) 
+
 ### Networking
+-  Dog API swift file with information about each dog breed 
+-  Third part API for getting dog breeds
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

@@ -27,21 +27,21 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 
 ### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
-* user will be able to sign in or sign up
-* user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
-* user will have the ability to take the quiz
-* results of the quiz will be shown
-* there will be a map showing the closest dog shelters
-* user will have a profile page
-* user can like or dislike the breed results
+[ ] user will be able to sign in or sign up
+[ ] user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
+[ ] user will have the ability to take the quiz
+[ ] results of the quiz will be shown
+[ ] there will be a map showing the closest dog shelters
+[ ] user will have a profile page
+[ ] user can like or dislike the breed results
 
 **Optional Nice-to-have Stories**
-* user can change the map to a list view of the closest shelters
-* user can swipe right/left to like/dislike dog breeds
-* user can change their profile name in settings
-* user can change their profile picture in settings
-* sign in will have a forgot password?
-* quiz can save progress
+[ ] user can change the map to a list view of the closest shelters
+[ ] user can swipe right/left to like/dislike dog breeds
+[ ] user can change their profile name in settings
+[ ] user can change their profile picture in settings
+[ ] sign in will have a forgot password?
+[ ] quiz can save progress
 
 ### 2. Screen Archetypes
 * launch page

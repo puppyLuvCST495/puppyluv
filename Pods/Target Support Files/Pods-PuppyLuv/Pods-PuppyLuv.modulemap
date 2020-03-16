@@ -1,0 +1,6 @@
+framework module Pods_PuppyLuv {
+  umbrella header "Pods-PuppyLuv-umbrella.h"
+
+  export *
+  module * { export * }
+}

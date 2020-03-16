@@ -68,28 +68,41 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
   * shows results
   * changes to list view (and back)
 * profile view controller
-  * 
+  * shows saved likes/dislikes
+  * displays profile picture/name
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* home
+* quiz
+* map
+* profile
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login
+   * Sign In
+   * Sign Up
+* Home
+   * Take Quiz
+   * Finish setting up your profile
+* Quiz
+  * Previous question (when question #2+)
+  * Next question (when question #n-)
+  * Results when finish button pressed (on last question)
+  * == *Results* ==
+    * swipe right/left to like/dislike
+    * press given buttons to like/dislike
+* Map
+  * List View (and back to map view)
+* Profile
+  * Settings (and back to profile)
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://imgur.com/pQx3e2m.jpg" width=600>
+<img src="https://imgur.com/L4ZCzQo.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

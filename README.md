@@ -74,14 +74,12 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-
 * home
 * quiz
 * map
 * profile
 
 **Flow Navigation** (Screen to Screen)
-
 * Login
    * Sign In
    * Sign Up
@@ -101,10 +99,15 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
   * Settings (and back to profile)
 
 ## Wireframes
-<img src="https://imgur.com/pQx3e2m.jpg" width=600>
 <img src="https://imgur.com/L4ZCzQo.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
+<img src="https://imgur.com/qU201Ad.jpg" width=250>
+<img src="https://imgur.com/kpJ099A.jpg" width=250>
+<img src="https://imgur.com/DyPBMKG.jpg" width=250>
+<img src="https://imgur.com/rQ8KBLq.jpg" width=250>
+<img src="https://imgur.com/L4LGRlS.jpg" width=250>
+
 
 ### [BONUS] Interactive Prototype
 <img src='https://imgur.com/e854v3r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />

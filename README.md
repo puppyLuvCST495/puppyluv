@@ -16,7 +16,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 - Pernille Dahl
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** entertainment
 - **Mobile:** 
 - **Story:** find the perfect dog breed
@@ -27,9 +26,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
-
 **Required Must-have Stories**
-
 * user will be able to sign in or sign up
 * user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
 * user will have the ability to take the quiz
@@ -39,7 +36,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 * user can like or dislike the breed results
 
 **Optional Nice-to-have Stories**
-
 * user can change the map to a list view of the closest shelters
 * user can swipe right/left to like/dislike dog breeds
 * user can change their profile name in settings
@@ -48,7 +44,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 * quiz can save progress
 
 ### 2. Screen Archetypes
-
 * launch page
    * our made logo in white with colored background
 * login view controller
@@ -72,7 +67,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
   * displays profile picture/name
 
 ### 3. Navigation
-
 **Tab Navigation** (Tab to Screen)
 * home
 * quiz
@@ -114,6 +108,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 
 ## Schema 
 [This section will be completed in Unit 9]
+
 ### Models
 [Add table of models]
 - Parse (User login and log out) 

@@ -1,33 +1,106 @@
 # PuppyLuv
+
 ## Table of Contents
 1. [Overview](#Overview)
 2. [Project Objective](#Project-Objective)
 3. [Paper Mockups](#Paper-MockUps)
+4. [Schema](#Schema)
 
-
-## Overview 
-### Description 
+## Overview
+### Description
+PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. The user has the ability to sign in as to save their results. The results would relate to a quiz that the user can take asking various questions, such as whether they want an active dog or what size dog they would prefer. Once the quiz is completed, there will be a results page that would display the top 5 or 10 dog breeds; they can swipe right to like the breed or left to dislike it (like a puppy Tinder). The results will save to the user's profile. There will also be an option to display a map showing the closest dog adoption centers relating to the user's current or given location. The user will also be able to change certain simple settings for their profile.
 
 ### Members of the team
 - Rosario Araujo
 - Athena Enosara
 - Pernille Dahl
 
-## Project Objective
-We want to develop an app that matches people with the perfect dog breed. The landing page will consist of a few boxes:
-  1. A slideshow of different puppies
-  2. A quiz where they answer a few questions to figure out the perfect breed
-The goal with the app is to quiz the future owner to be able to best find the breed that actually fits with the lifestyle and personality, and then provide them with a few places close by where they can find and adopt their new puppy.
+### App Evaluation
+[Evaluation of your app across the following attributes]
+- **Category:** entertainment
+- **Mobile:** 
+- **Story:** find the perfect dog breed
+- **Market:** dog-lovers, dog-owners
+- **Habit:** 
+- **Scope:**
 
-### User Stories 
+## Product Spec
 
-### Navigation 
+### 1. User Stories (Required and Optional)
 
-#### Flow Navigation
+**Required Must-have Stories**
 
-## Paper MockUps
-<a href="https://imgur.com/pdOGWRw"><img src="https://i.imgur.com/pdOGWRw.jpg" title="source: imgur.com" width="280"/></a>
-<a href="https://imgur.com/Z2EDqzB"><img src="https://i.imgur.com/Z2EDqzB.jpg" title="source: imgur.com" width="280"/></a>
-<a href="https://imgur.com/unCHwLo"><img src="https://i.imgur.com/unCHwLo.jpg" title="source: imgur.com" width="280"/></a>
-<a href="https://imgur.com/XdFUk0k"><img src="https://i.imgur.com/XdFUk0k.jpg" title="source: imgur.com" width="280"/></a>
+* user will be able to sign in or sign up
+* user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
+* user will have the ability to take the quiz
+* results of the quiz will be shown
+* there will be a map showing the closest dog shelters
+* user will have a profile page
+* user can like or dislike the breed results
+
+**Optional Nice-to-have Stories**
+
+* user can change the map to a list view of the closest shelters
+* user can swipe right/left to like/dislike dog breeds
+* user can change their profile name in settings
+* user can change their profile picture in settings
+* sign in will have a forgot password?
+* quiz can save progress
+
+### 2. Screen Archetypes
+
+* launch page
+   * our made logo in white with colored background
+* login view controller
+   * logo
+   * username label / text field
+   * password label / text field
+   * sign in button
+   * sign up button
+* home view controller
+  * show what PuppyLuv is about
+  * give ability to go to quiz with a button
+* quiz view controller
+  * ability to take quiz and go back/next on questions
+  * shows an image/illustrations to go with each question/selection
+  * shows results on next page connecting only to quiz view controller (where breeds can be liked/disliked)
+* map view controller
+  * shows results
+  * changes to list view (and back)
+* profile view controller
+  * 
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* [fill out your first tab]
+* [fill out your second tab]
+* [fill out your third tab]
+
+**Flow Navigation** (Screen to Screen)
+
+* [list first screen here]
+   * [list screen navigation here]
+   * ...
+* [list second screen here]
+   * [list screen navigation here]
+   * ...
+
+## Wireframes
+[Add picture of your hand sketched wireframes in this section]
+<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+### [BONUS] Digital Wireframes & Mockups
+
+### [BONUS] Interactive Prototype
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]
 

@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ProfileViewController.swift
 //  PuppyLuv
 //
 //  Created by Pernille Dahl on 3/16/20.
@@ -8,18 +8,23 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ProfileViewController: UIViewController {
+    
+    
+    @IBOutlet weak var profileImage: UIImageView!
+    
 
-  
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
-
+        makeRound()
         // Do any additional setup after loading the view.
+    }
+    
+    func makeRound(){
+        profileImage?.layer.cornerRadius = (profileImage?.frame.size.width ?? 0.0) / 2
+        profileImage?.clipsToBounds = true
+        profileImage?.layer.borderWidth = 3.0
+        profileImage?.layer.borderColor = UIColor.white.cgColor
     }
     
 

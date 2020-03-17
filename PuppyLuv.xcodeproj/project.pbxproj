@@ -16,6 +16,7 @@
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
+		A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C924204A1F00BBD665 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		A38E69C924204A1F00BBD665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				A38E69C324202E2F00BBD665 /* LoginViewController.swift */,
 				A38E69C524202F2300BBD665 /* HomeViewController.swift */,
 				A38E69C72420343300BBD665 /* MainTabController.swift */,
+				A38E69C924204A1F00BBD665 /* ProfileViewController.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
+				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
 				A380A173241C4666006792A5 /* FeedViewController.swift in Sources */,
 				35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */,
 			);

@@ -1,4 +1,8 @@
 PODS:
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - Bolts/Tasks (1.9.0)
   - Firebase/CoreOnly (6.18.0):
     - FirebaseCore (= 6.6.3)
   - Firebase/Database (6.18.0):
@@ -34,12 +38,21 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - Parse (1.17.3):
+    - Parse/Core (= 1.17.3)
+  - Parse/Core (1.17.3):
+    - Bolts/Tasks (~> 1.9)
 
 DEPENDENCIES:
+  - AlamofireImage
   - Firebase/Database
+  - Parse
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
+    - Bolts
     - Firebase
     - FirebaseAuthInterop
     - FirebaseCore
@@ -51,8 +64,12 @@ SPEC REPOS:
     - GoogleUtilities
     - leveldb-library
     - nanopb
+    - Parse
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 78276943ad85e616dfa54dafa6c89512987d9d60
@@ -64,7 +81,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
 
-PODFILE CHECKSUM: b6e49739493f0f745dcfedb263f802e5185851f1
+PODFILE CHECKSUM: 352c307a3bf7fb9337af7b38a0ba8de7f41aa49f
 
 COCOAPODS: 1.8.4

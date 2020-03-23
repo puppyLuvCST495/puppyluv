@@ -12,6 +12,7 @@
 		35403BF823FE0DC100795A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BF623FE0DC100795A5B /* Main.storyboard */; };
 		35403BFA23FE0DC200795A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35403BF923FE0DC200795A5B /* Assets.xcassets */; };
 		35403BFD23FE0DC200795A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BFB23FE0DC200795A5B /* LaunchScreen.storyboard */; };
+		A2DAFD95E06DF9DB28F7BB52 /* Pods_PuppyLuv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */; };
 		A380A173241C4666006792A5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380A172241C4666006792A5 /* FeedViewController.swift */; };
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
@@ -27,11 +28,14 @@
 		35403BF923FE0DC200795A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35403BFC23FE0DC200795A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35403BFE23FE0DC200795A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.release.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.release.xcconfig"; sourceTree = "<group>"; };
+		7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.debug.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.debug.xcconfig"; sourceTree = "<group>"; };
 		A380A172241C4666006792A5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A38E69C924204A1F00BBD665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyLuv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2DAFD95E06DF9DB28F7BB52 /* Pods_PuppyLuv.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				35403BF123FE0DC100795A5B /* PuppyLuv */,
 				35403BF023FE0DC100795A5B /* Products */,
+				A29D134FEC416A2C8D5D4B08 /* Pods */,
+				F90668F560D49BC18B20140A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,24 @@
 			path = PuppyLuv;
 			sourceTree = "<group>";
 		};
+		A29D134FEC416A2C8D5D4B08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */,
+				6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F90668F560D49BC18B20140A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35403C0123FE0DC200795A5B /* Build configuration list for PBXNativeTarget "PuppyLuv" */;
 			buildPhases = (
+				1BBA36B6615A5A4C891A7D1E /* [CP] Check Pods Manifest.lock */,
 				35403BEB23FE0DC100795A5B /* Sources */,
 				35403BEC23FE0DC100795A5B /* Frameworks */,
 				35403BED23FE0DC100795A5B /* Resources */,
+				62A1D8A9B78CC56B0AC40D2F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BBA36B6615A5A4C891A7D1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PuppyLuv-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62A1D8A9B78CC56B0AC40D2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35403BEB23FE0DC100795A5B /* Sources */ = {
@@ -300,6 +369,7 @@
 		};
 		35403C0223FE0DC200795A5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +387,7 @@
 		};
 		35403C0323FE0DC200795A5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

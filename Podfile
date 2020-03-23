@@ -7,5 +7,7 @@ target 'PuppyLuv' do
 
   # Pods for PuppyLuv
   pod 'Firebase/Database'
+  pod 'Parse'
+  pod 'AlamofireImage'
 
 end

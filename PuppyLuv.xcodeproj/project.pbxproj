@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		35403BFD23FE0DC200795A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BFB23FE0DC200795A5B /* LaunchScreen.storyboard */; };
 		A2DAFD95E06DF9DB28F7BB52 /* Pods_PuppyLuv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */; };
 		A380A173241C4666006792A5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380A172241C4666006792A5 /* FeedViewController.swift */; };
+		A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39B9242993FC00E76313 /* SettingViewController.swift */; };
+		A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39BB24299AED00E76313 /* SettingTableViewController.swift */; };
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
@@ -31,6 +33,8 @@
 		6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.release.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.release.xcconfig"; sourceTree = "<group>"; };
 		7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.debug.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.debug.xcconfig"; sourceTree = "<group>"; };
 		A380A172241C4666006792A5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A38C39B9242993FC00E76313 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A38C39BB24299AED00E76313 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				A38E69C524202F2300BBD665 /* HomeViewController.swift */,
 				A38E69C72420343300BBD665 /* MainTabController.swift */,
 				A38E69C924204A1F00BBD665 /* ProfileViewController.swift */,
+				A38C39B9242993FC00E76313 /* SettingViewController.swift */,
+				A38C39BB24299AED00E76313 /* SettingTableViewController.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -92,7 +98,6 @@
 				7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */,
 				6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,8 +227,10 @@
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
+				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
 				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
+				A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */,
 				A380A173241C4666006792A5 /* FeedViewController.swift in Sources */,
 				35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */,
 			);

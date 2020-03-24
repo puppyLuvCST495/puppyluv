@@ -1,24 +1,21 @@
 //
-//  HomeViewController.swift
+//  SettingViewController.swift
 //  PuppyLuv
 //
-//  Created by Pernille Dahl on 3/16/20.
+//  Created by Pernille Dahl on 3/23/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
 
 import UIKit
-import Parse
 
-class HomeViewController: UIViewController {
+class SettingViewController: UIViewController, UITableViewDelegate {
 
-  
-    
+    @IBOutlet weak var viewTable: UITableView!
+    @IBOutlet weak var editProfile: UILabel!
+    @IBOutlet weak var logOut: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        
 
         // Do any additional setup after loading the view.
     }
@@ -26,7 +23,7 @@ class HomeViewController: UIViewController {
     
     
     
-    
+
     /*
     // MARK: - Navigation
 

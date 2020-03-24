@@ -134,7 +134,7 @@
         <!--Home-->
         <scene sceneID="sIE-KD-dnE">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="fRL-e3-p2D" customClass="HomeViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fRL-e3-p2D" customClass="HomeViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kar-ze-EGu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

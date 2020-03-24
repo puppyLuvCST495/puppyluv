@@ -33,6 +33,13 @@ class SettingTableViewController: UITableViewController {
     @objc func tapFunction(sender:UITapGestureRecognizer) {
         print("logout working")
         PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginView = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        
+        delegate.window?.rootViewController = loginView
     }
 
    

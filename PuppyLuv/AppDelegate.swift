@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        
+        if PFUser.current() != nil {
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let mainTabController = main.instantiateViewController(withIdentifier: "MainTabController")
+            window?.rootViewController = mainTabController
+        } 
+        
         return true
     }
 

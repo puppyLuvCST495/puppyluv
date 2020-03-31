@@ -53,12 +53,7 @@ class LoginViewController: UIViewController {
                  print("Error: \(error?.localizedDescription)")
             }
         }
-//        // get ref to tab controller
-//        let mainTabController = storyboard?.instantiateViewController(identifier: "MainTabController") as! MainTabController
-//
-//        mainTabController.selectedViewController = mainTabController.viewControllers?[0]
-//
-//        present(mainTabController, animated: true, completion: nil)
+
         
     }
     

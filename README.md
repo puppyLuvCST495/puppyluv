@@ -107,22 +107,16 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 ### Models
 [Add table of models]
 
-| Property  |
-|___________|
-|           |
-|           |
-|           |
-|           |
-|           |
-|           |
-|.          |
-|           |
-|           |
-|           |
-|           |
-|           |       
-|           |
-|           |
+/***
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+| ObjectId    | String     | Unique id for the users|
+|Dog          | Basketball | Orange         | 
+|             |            |                |
+
+
+
+***/
 
 
 

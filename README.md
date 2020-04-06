@@ -107,6 +107,26 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 ### Models
 [Add table of models]
 
+| Property  |
+|___________|
+|           |
+|           |
+|           |
+|           |
+|           |
+|           |
+|.          |
+|           |
+|           |
+|           |
+|           |
+|           |       
+|           |
+|           |
+
+
+
+
 
 - Parse (User login and log out) 
 - Will most probably use Parse for storing user results and maybe to create databases with info about breeds. 

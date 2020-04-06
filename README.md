@@ -113,10 +113,20 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 (If not might, we might use firebase) 
 
 ### Networking
--  Dog API swift file with information about each dog breed 
--  Third part API for getting dog breeds
+###### List of network requests by screen
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
-
+* Login Screen 
+      - (Read/GET) Query the user object 
+      - (Read/GET) Query to check if user object is already logged in
+      - (Create/POST) Save a new user object for sign up
+* Quiz Screen
+      - (Create/POST) Create questions for user to answer
+      - (Create/POST) Display the top 5 results from the quiz 
+* Map Screen
+    - (Read/GET) Query all dog shelters based on zipcode
+* Profile Screen
+    - (Read/GET) Query logged in user object
+    - (Update/PUT) Update user profile image 
+    - (Read/Get) Query current user object and log out 
+    - (Read/GET) Query all the dogs the user has liked and disliked 
+   

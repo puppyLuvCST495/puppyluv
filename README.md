@@ -110,11 +110,21 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 /***
 | __Property__| __Type__   | __Decription__ |
 |-------------|------------|----------------|
-| ObjectId    | String     | Unique id for the users|
-|Dog          | Basketball | Orange         | 
-|             |            |                |
-
-
+| ObjectId    | String | Unique id for the users|
+|username     | String | Name the user chooses for their account| 
+|password     |  String|Password for user to access account|
+|email        | String|  Email to access Account|
+|Breed        |String | Dog Breed |
+|Weight       |String | Dog Weight |
+|Lifespan     |String | Potential Dog Lifespan|
+|Group        | String|  The Group the dog belongs to|
+| Picture     | String|Url to a picture of a give dog |
+|Description  | String | A description of a given dog |
+| Grooming    |  String| How much grooming is required for a given dog  |  
+|Shedding     |String | How much dog sheds|
+| Energy      | String|  How energetic a dog is|
+| Training    |   String | How easily a dog can be trained  | 
+| Temperament | String |Dogs Personality |
 
 ***/
 

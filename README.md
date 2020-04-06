@@ -116,12 +116,12 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 ###### List of network requests by screen
 
 * Login Screen 
-      - (Read/GET) Query the user object 
-      - (Read/GET) Query to check if user object is already logged in
-      - (Create/POST) Save a new user object for sign up
+    - (Read/GET) Query the user object 
+    - (Read/GET) Query to check if user object is already logged in
+    - (Create/POST) Save a new user object for sign up
 * Quiz Screen
-      - (Create/POST) Create questions for user to answer
-      - (Create/POST) Display the top 5 results from the quiz 
+    - (Create/POST) Create questions for user to answer
+    - (Create/POST) Display the top 5 results from the quiz 
 * Map Screen
     - (Read/GET) Query all dog shelters based on zipcode
 * Profile Screen

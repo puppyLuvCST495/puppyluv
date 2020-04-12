@@ -27,19 +27,19 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 
 ### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
-- [ ] user will be able to sign in or sign up
-- [ ] user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
-- [ ] user will have the ability to take the quiz
+- [x] user will be able to sign in or sign up
+- [x] user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
+- [x] user will have the ability to take the quiz
 - [ ] results of the quiz will be shown
 - [ ] there will be a map showing the closest dog shelters
-- [ ] user will have a profile page
+- [x] user will have a profile page
 - [ ] user can like or dislike the breed results
 
 **Optional Nice-to-have Stories**
 - [ ] user can change the map to a list view of the closest shelters
 - [ ] user can swipe right/left to like/dislike dog breeds
 - [ ] user can change their profile name in settings
-- [ ] user can change their profile picture in settings
+- [x] user can change their profile picture in settings
 - [ ] sign in will have a forgot password?
 - [ ] quiz can save progress
 
@@ -99,13 +99,11 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 <img src="https://imgur.com/qU201Ad.jpg" width=150> <img src="https://imgur.com/kpJ099A.jpg" width=150> <img src="https://imgur.com/DyPBMKG.jpg" width=150> <img src="https://imgur.com/rQ8KBLq.jpg" width=150> <img src="https://imgur.com/L4LGRlS.jpg" width=150>
 
 ### [BONUS] Interactive Prototype
-<img src='https://imgur.com/e854v3r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://recordit.co/zEt9WIkmgJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
 
 ### Models
-[Add table of models]
 
 /***
 | __Property__| __Type__   | __Decription__ |

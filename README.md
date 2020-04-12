@@ -105,7 +105,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 
 ### Models
 
-/***
 | __Property__| __Type__   | __Decription__ |
 |-------------|------------|----------------|
 | ObjectId    | String | Unique id for the users|
@@ -123,11 +122,6 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 | Energy      | String|  How energetic a dog is|
 | Training    |   String | How easily a dog can be trained  | 
 | Temperament | String |Dogs Personality |
-
-***/
-
-
-
 
 
 - Parse (User login and log out) 

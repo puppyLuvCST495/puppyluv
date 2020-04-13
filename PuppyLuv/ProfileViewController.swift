@@ -13,7 +13,11 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     
-
+    @IBOutlet weak var likeButton: UITabBarItem!
+    @IBOutlet weak var dislikeButton: UITabBarItem!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeRound()
@@ -26,6 +30,10 @@ class ProfileViewController: UIViewController {
         profileImage?.layer.borderWidth = 3.0
         profileImage?.layer.borderColor = UIColor.white.cgColor
     }
+    
+    
+    
+    
     
 
     /*

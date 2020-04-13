@@ -15,9 +15,10 @@
 		A2DAFD95E06DF9DB28F7BB52 /* Pods_PuppyLuv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */; };
 		A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94724355CA900C94A41 /* QuizViewController.swift */; };
 		A349A94C2435852700C94A41 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94B2435852700C94A41 /* QuestionsViewController.swift */; };
-		A380A173241C4666006792A5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A380A172241C4666006792A5 /* FeedViewController.swift */; };
 		A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39B9242993FC00E76313 /* SettingViewController.swift */; };
 		A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39BB24299AED00E76313 /* SettingTableViewController.swift */; };
+		A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A52444ED85009F96BB /* FeedViewController.swift */; };
+		A38C79A82444EE18009F96BB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A72444EE18009F96BB /* FeedCell.swift */; };
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
@@ -36,9 +37,10 @@
 		7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.debug.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.debug.xcconfig"; sourceTree = "<group>"; };
 		A349A94724355CA900C94A41 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		A349A94B2435852700C94A41 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
-		A380A172241C4666006792A5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A38C39B9242993FC00E76313 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A38C39BB24299AED00E76313 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		A38C79A52444ED85009F96BB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A38C79A72444EE18009F96BB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 				35403BF923FE0DC200795A5B /* Assets.xcassets */,
 				35403BFB23FE0DC200795A5B /* LaunchScreen.storyboard */,
 				35403BFE23FE0DC200795A5B /* Info.plist */,
-				A380A172241C4666006792A5 /* FeedViewController.swift */,
 				A38E69C324202E2F00BBD665 /* LoginViewController.swift */,
 				A38E69C524202F2300BBD665 /* HomeViewController.swift */,
 				A38E69C72420343300BBD665 /* MainTabController.swift */,
@@ -94,6 +95,8 @@
 				A38C39BB24299AED00E76313 /* SettingTableViewController.swift */,
 				A349A94724355CA900C94A41 /* QuizViewController.swift */,
 				A349A94B2435852700C94A41 /* QuestionsViewController.swift */,
+				A38C79A52444ED85009F96BB /* FeedViewController.swift */,
+				A38C79A72444EE18009F96BB /* FeedCell.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -235,11 +238,12 @@
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
+				A38C79A82444EE18009F96BB /* FeedCell.swift in Sources */,
 				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
+				A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */,
 				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
 				A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */,
-				A380A173241C4666006792A5 /* FeedViewController.swift in Sources */,
 				35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHH-PE-ZBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3201" y="127"/>
+            <point key="canvasLocation" x="3729" y="117"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="Qns-Yg-hht">
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7H-YG-CHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2390" y="828"/>
+            <point key="canvasLocation" x="2280" y="834"/>
         </scene>
         <!--QuestionViewController-->
         <scene sceneID="JVY-jf-nqW">
@@ -239,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MiV-ul-P6g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2389.8550724637685" y="1512.7232142857142"/>
+            <point key="canvasLocation" x="2280" y="1546"/>
         </scene>
         <!--Question 2-->
         <scene sceneID="SIh-03-rVn">
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="isC-SF-JNa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2389.8550724637685" y="2179.6875"/>
+            <point key="canvasLocation" x="2280" y="2265"/>
         </scene>
         <!--Home-->
         <scene sceneID="sIE-KD-dnE">
@@ -336,92 +336,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c90-X0-aCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1611.5942028985507" y="126.5625"/>
+            <point key="canvasLocation" x="1543" y="127"/>
         </scene>
         <!--PuppyLuv-->
-        <scene sceneID="pXi-eK-pU5">
-            <objects>
-                <viewController storyboardIdentifier="ProfileViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rhH-9U-rpQ" customClass="ProfileViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vgs-fy-1Kk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" id="mwi-iL-O8m">
-                                <rect key="frame" x="0.0" y="56" width="414" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HX1-Gu-WLj">
-                                        <rect key="frame" x="119.5" y="0.5" width="175" height="166"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="6ot-ed-HAI"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-XZ-oF8">
-                                        <rect key="frame" x="128.5" y="167" width="157" height="29"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User description (if any). EX: I love puppies. All I want for Christmas is a Grey Pitbull. I only rescue!! &lt;3" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7w-gX-8y7">
-                                        <rect key="frame" x="30" y="202" width="354" height="61"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="h7w-gX-8y7" firstAttribute="leading" secondItem="dYQ-PO-Hw4" secondAttribute="leading" constant="30" id="65F-k6-kfx"/>
-                                    <constraint firstItem="h7w-gX-8y7" firstAttribute="top" secondItem="jMh-XZ-oF8" secondAttribute="bottom" constant="6" id="HEs-xs-1Tr"/>
-                                    <constraint firstItem="dYQ-PO-Hw4" firstAttribute="bottom" secondItem="h7w-gX-8y7" secondAttribute="bottom" constant="17" id="K7Z-qa-AMf"/>
-                                    <constraint firstItem="HX1-Gu-WLj" firstAttribute="top" secondItem="dYQ-PO-Hw4" secondAttribute="top" id="UXP-d1-UKo"/>
-                                    <constraint firstItem="jMh-XZ-oF8" firstAttribute="top" secondItem="HX1-Gu-WLj" secondAttribute="bottom" id="WDK-E7-LyW"/>
-                                    <constraint firstItem="jMh-XZ-oF8" firstAttribute="centerX" secondItem="mwi-iL-O8m" secondAttribute="centerX" id="bPK-4S-Rjv"/>
-                                    <constraint firstItem="dYQ-PO-Hw4" firstAttribute="trailing" secondItem="h7w-gX-8y7" secondAttribute="trailing" constant="30" id="uWl-zN-dt0"/>
-                                    <constraint firstItem="HX1-Gu-WLj" firstAttribute="centerX" secondItem="mwi-iL-O8m" secondAttribute="centerX" id="xih-qV-4gT"/>
-                                </constraints>
-                                <viewLayoutGuide key="safeArea" id="dYQ-PO-Hw4"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liked Breeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-hv-mIg">
-                                <rect key="frame" x="35" y="359" width="122" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="HFB-SO-HOD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="5Qb-hv-mIg" firstAttribute="leading" secondItem="hJc-Do-yhd" secondAttribute="leading" constant="35" id="PcT-2r-jCr"/>
-                            <constraint firstItem="5Qb-hv-mIg" firstAttribute="top" secondItem="mwi-iL-O8m" secondAttribute="bottom" constant="23" id="w9X-rN-EeG"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hJc-Do-yhd"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="PuppyLuv" id="rCa-YX-nyL">
-                        <barButtonItem key="rightBarButtonItem" title="Setting" style="plain" id="mwh-KQ-ela">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wx8-Kw-HxF">
-                                <rect key="frame" x="337" y="13" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dzZ-VT-cuq" kind="show" id="YbR-82-x3Q"/>
-                                </connections>
-                            </button>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yBX-9h-Xnn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4903" y="1483"/>
-        </scene>
-        <!--PuppyLyv-->
         <scene sceneID="JIy-re-uYa">
             <objects>
                 <viewController id="brY-6I-7tg" sceneMemberID="viewController">
@@ -467,24 +384,34 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Yz9-2b-MEf"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disliked Breeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT3-Db-hi0">
-                                <rect key="frame" x="35" y="360" width="146" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="e20-Aa-ZD0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doggie" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-N6-TWi">
+                                <rect key="frame" x="8" y="419" width="201" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-cg-TFe">
+                                <rect key="frame" x="20" y="358" width="173" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eat dog" translatesAutoresizingMaskIntoConstraints="NO" id="521-OT-a3p">
+                                <rect key="frame" x="8" y="556" width="208" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wo dog" translatesAutoresizingMaskIntoConstraints="NO" id="upv-SS-Qlz">
+                                <rect key="frame" x="224" y="556" width="182" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dooggg" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-yx-WAG">
+                                <rect key="frame" x="217" y="424" width="189" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="iT3-Db-hi0" firstAttribute="leading" secondItem="qMd-vO-e4b" secondAttribute="leading" constant="35" id="YMc-L5-XQ5"/>
-                            <constraint firstItem="iT3-Db-hi0" firstAttribute="top" secondItem="b3w-dX-IiO" secondAttribute="bottom" constant="24" id="nL8-ZB-9WE"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qMd-vO-e4b"/>
                     </view>
-                    <navigationItem key="navigationItem" title="PuppyLyv" id="wYN-d2-jgK">
+                    <navigationItem key="navigationItem" title="PuppyLuv" id="wYN-d2-jgK">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Xi9-8m-hyB">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -495,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5554" y="1483"/>
+            <point key="canvasLocation" x="4820" y="848"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -520,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-xH-ZHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5193" y="2210"/>
+            <point key="canvasLocation" x="5588" y="848"/>
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="fXP-Hp-WNd">
@@ -642,7 +569,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9M-aq-MhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
             </objects>
-            <point key="canvasLocation" x="5878" y="2189"/>
+            <point key="canvasLocation" x="6314" y="855"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -672,6 +599,7 @@
                     <connections>
                         <segue destination="fRL-e3-p2D" kind="relationship" relationship="viewControllers" id="Mca-bj-bqv"/>
                         <segue destination="4w0-yO-lPQ" kind="relationship" relationship="viewControllers" id="zNX-as-E4t"/>
+                        <segue destination="6s7-Ns-7Zf" kind="relationship" relationship="viewControllers" id="1P1-oQ-HXv"/>
                         <segue destination="d5F-d5-tLx" kind="relationship" relationship="viewControllers" id="AL2-fH-QvV"/>
                         <segue destination="nJM-MI-ugK" kind="relationship" relationship="viewControllers" id="MR7-Pr-r8a"/>
                     </connections>
@@ -679,6 +607,73 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTY-gN-kwa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813" y="127"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="0JX-th-Mof">
+            <objects>
+                <viewController id="xZY-YN-ufo" customClass="FeedViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LRT-t3-bwN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PuppyLuv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzu-2B-A2T">
+                                <rect key="frame" x="77" y="101" width="121" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="28"/>
+                                <color key="textColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZI-Q4-zRS">
+                                <rect key="frame" x="34" y="107" width="24" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="camera" catalog="system"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doggie" translatesAutoresizingMaskIntoConstraints="NO" id="gYe-nw-4yb">
+                                <rect key="frame" x="87" y="143" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Will show a tableview  of dogs images uploaded by the user" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okx-KB-Jnh">
+                                <rect key="frame" x="40" y="307" width="334" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="3X3-C8-9aU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="square.and.pencil" catalog="system" id="IlR-DI-Nh4"/>
+                    <navigationItem key="navigationItem" title="Feed" id="1xw-Ho-dh5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYr-fV-Zs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3913" y="834"/>
+        </scene>
+        <!--Likes-->
+        <scene sceneID="CLL-Gq-Sc8">
+            <objects>
+                <viewController id="mbB-WP-bxl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zp8-13-vxn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Will show a collection view of liked dog breeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-6j-L4N">
+                                <rect key="frame" x="30" y="100" width="355" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0Hw-R0-fNF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Likes" image="heart" catalog="system" id="Lnk-yV-lzp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URa-IT-iA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912" y="1546"/>
         </scene>
         <!--Profile-->
         <scene sceneID="peG-my-O86">
@@ -698,12 +693,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="mb2-CH-f1q" kind="relationship" relationship="rootViewController" id="EYJ-Ft-Cok"/>
+                        <segue destination="brY-6I-7tg" kind="relationship" relationship="rootViewController" id="SkO-n6-jKP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OES-GE-VwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3993" y="135"/>
+            <point key="canvasLocation" x="4438" y="117"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="x3j-tX-CjT">
@@ -725,24 +720,42 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dq6-5w-fp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2389.8550724637685" y="126.5625"/>
+            <point key="canvasLocation" x="2280" y="127"/>
+        </scene>
+        <!--Feed-->
+        <scene sceneID="uwP-GK-70p">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6s7-Ns-7Zf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" image="folder" catalog="system" id="9Jo-1K-slk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SIO-uL-7di">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0C8-n3-Ivy" kind="relationship" relationship="rootViewController" id="dcd-bf-3O2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASp-Ut-wiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031.884057971015" y="126.5625"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="pbU-ta-zVi">
+        <scene sceneID="VgY-6Z-Noh">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mb2-CH-f1q" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="0C8-n3-Ivy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="l83-Re-TDf"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eNU-LJ-hOd">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <navigationItem key="navigationItem" id="Olh-Cm-KFo"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7jc-od-Wvr">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                                 <color key="value" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
@@ -750,70 +763,31 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
                             <color key="value" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
-                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="7P5-3u-M8A" kind="relationship" relationship="viewControllers" id="tP3-BQ-ggv"/>
-                        <segue destination="rd1-7A-znu" kind="relationship" relationship="viewControllers" id="0El-nj-tyi"/>
+                        <segue destination="xZY-YN-ufo" kind="relationship" relationship="viewControllers" id="SzT-CG-wSO"/>
+                        <segue destination="mbB-WP-bxl" kind="relationship" relationship="viewControllers" id="PdG-CU-kef"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Flh-pf-gnc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8rI-Y9-lEe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3992.753623188406" y="803.57142857142856"/>
-        </scene>
-        <!--Likes-->
-        <scene sceneID="DUU-R2-iXB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7P5-3u-M8A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Likes" image="heart" catalog="system" id="hsf-Oo-k5i"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NLL-I1-Qnq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="rhH-9U-rpQ" kind="relationship" relationship="rootViewController" id="tLR-KQ-kD2"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zb-lI-Gl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4902.898550724638" y="803.57142857142856"/>
-        </scene>
-        <!--Dislikes-->
-        <scene sceneID="s6R-Yh-PUo">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rd1-7A-znu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dislikes" image="heart.slash" catalog="system" id="53Q-gy-sGZ"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c8o-xf-q7B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="brY-6I-7tg" kind="relationship" relationship="rootViewController" id="Y89-aM-ZaR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hnb-Fz-nbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5555" y="804"/>
+            <point key="canvasLocation" x="3047.826086956522" y="833.70535714285711"/>
         </scene>
     </scenes>
     <resources>
         <image name="PuppyLuv-Logo-withText" width="240" height="240"/>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="doggie" width="1280" height="720"/>
+        <image name="dooggg" width="2048" height="1365"/>
+        <image name="eat dog" width="276" height="183"/>
+        <image name="folder" catalog="system" width="64" height="46"/>
         <image name="folder.fill" catalog="system" width="64" height="46"/>
         <image name="heart" catalog="system" width="64" height="54"/>
-        <image name="heart.slash" catalog="system" width="64" height="56"/>
         <image name="map" catalog="system" width="64" height="56"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+        <image name="wo dog" width="275" height="183"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="YbR-82-x3Q"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

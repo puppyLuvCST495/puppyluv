@@ -12,6 +12,7 @@ import Parse
 class SettingTableViewController: UITableViewController {
 
     @IBOutlet weak var logoutButtonLabel: UILabel!
+
     
     
     @IBOutlet var SettingTableView: UITableView!

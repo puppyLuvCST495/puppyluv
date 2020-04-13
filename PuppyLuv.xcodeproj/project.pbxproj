@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018309D424451B6D00271880 /* SettingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018309D324451B6D00271880 /* SettingCameraViewController.swift */; };
 		35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF223FE0DC100795A5B /* AppDelegate.swift */; };
 		35403BF523FE0DC100795A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF423FE0DC100795A5B /* ViewController.swift */; };
 		35403BF823FE0DC100795A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BF623FE0DC100795A5B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018309D324451B6D00271880 /* SettingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCameraViewController.swift; sourceTree = "<group>"; };
 		35403BEF23FE0DC100795A5B /* PuppyLuv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyLuv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35403BF223FE0DC100795A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35403BF423FE0DC100795A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				A349A94B2435852700C94A41 /* QuestionsViewController.swift */,
 				A38C79A52444ED85009F96BB /* FeedViewController.swift */,
 				A38C79A72444EE18009F96BB /* FeedCell.swift */,
+				018309D324451B6D00271880 /* SettingCameraViewController.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018309D424451B6D00271880 /* SettingCameraViewController.swift in Sources */,
 				A349A94C2435852700C94A41 /* QuestionsViewController.swift in Sources */,
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,

@@ -421,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4820" y="848"/>
+            <point key="canvasLocation" x="4438" y="852"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -446,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-xH-ZHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4819" y="1523"/>
+            <point key="canvasLocation" x="4438" y="1527"/>
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="fXP-Hp-WNd">
@@ -609,7 +609,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9M-aq-MhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
             </objects>
-            <point key="canvasLocation" x="4819.5652173913049" y="2180.6919642857142"/>
+            <point key="canvasLocation" x="4438" y="2185"/>
         </scene>
         <!--Setting Camera View Controller-->
         <scene sceneID="g9a-dj-uZM">
@@ -662,7 +662,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5523.913043478261" y="2179.3526785714284"/>
+            <point key="canvasLocation" x="5143" y="2183"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -741,7 +741,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYr-fV-Zs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3752" y="1546"/>
+            <point key="canvasLocation" x="3729" y="1546"/>
         </scene>
         <!--Likes-->
         <scene sceneID="CLL-Gq-Sc8">

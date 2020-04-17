@@ -19,7 +19,8 @@
 		A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39B9242993FC00E76313 /* SettingViewController.swift */; };
 		A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39BB24299AED00E76313 /* SettingTableViewController.swift */; };
 		A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A52444ED85009F96BB /* FeedViewController.swift */; };
-		A38C79A82444EE18009F96BB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A72444EE18009F96BB /* FeedCell.swift */; };
+		A38C79AA244A3D4E009F96BB /* FeedCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */; };
+		A38C79AC244A4781009F96BB /* DogFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79AB244A4781009F96BB /* DogFeedCell.swift */; };
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
@@ -42,7 +43,8 @@
 		A38C39B9242993FC00E76313 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A38C39BB24299AED00E76313 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A38C79A52444ED85009F96BB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		A38C79A72444EE18009F96BB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCameraViewController.swift; sourceTree = "<group>"; };
+		A38C79AB244A4781009F96BB /* DogFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFeedCell.swift; sourceTree = "<group>"; };
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -98,8 +100,9 @@
 				A349A94724355CA900C94A41 /* QuizViewController.swift */,
 				A349A94B2435852700C94A41 /* QuestionsViewController.swift */,
 				A38C79A52444ED85009F96BB /* FeedViewController.swift */,
-				A38C79A72444EE18009F96BB /* FeedCell.swift */,
 				018309D324451B6D00271880 /* SettingCameraViewController.swift */,
+				A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */,
+				A38C79AB244A4781009F96BB /* DogFeedCell.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -242,9 +245,10 @@
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
-				A38C79A82444EE18009F96BB /* FeedCell.swift in Sources */,
 				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
+				A38C79AA244A3D4E009F96BB /* FeedCameraViewController.swift in Sources */,
+				A38C79AC244A4781009F96BB /* DogFeedCell.swift in Sources */,
 				A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */,
 				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
 				A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */,

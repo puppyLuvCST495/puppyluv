@@ -1,19 +1,19 @@
 //
-//  FeedCell.swift
+//  DogFeedCell.swift
 //  PuppyLuv
 //
-//  Created by Pernille Dahl on 4/13/20.
+//  Created by Pernille Dahl on 4/17/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
 
 import UIKit
 
-class FeedCell: UITableViewCell {
+class DogFeedCell: UITableViewCell {
     
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var cameraLabel: UIButton!
-     @IBOutlet weak var photoView: UIImageView!
-
+    @IBOutlet weak var photoView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var captionLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

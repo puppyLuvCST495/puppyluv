@@ -21,6 +21,7 @@
 		A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A52444ED85009F96BB /* FeedViewController.swift */; };
 		A38C79AA244A3D4E009F96BB /* FeedCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */; };
 		A38C79AC244A4781009F96BB /* DogFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79AB244A4781009F96BB /* DogFeedCell.swift */; };
+		A38C79AE244A5FDE009F96BB /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79AD244A5FDE009F96BB /* CommentCell.swift */; };
 		A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C324202E2F00BBD665 /* LoginViewController.swift */; };
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
@@ -45,6 +46,7 @@
 		A38C79A52444ED85009F96BB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCameraViewController.swift; sourceTree = "<group>"; };
 		A38C79AB244A4781009F96BB /* DogFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogFeedCell.swift; sourceTree = "<group>"; };
+		A38C79AD244A5FDE009F96BB /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		A38E69C324202E2F00BBD665 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				018309D324451B6D00271880 /* SettingCameraViewController.swift */,
 				A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */,
 				A38C79AB244A4781009F96BB /* DogFeedCell.swift */,
+				A38C79AD244A5FDE009F96BB /* CommentCell.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
+				A38C79AE244A5FDE009F96BB /* CommentCell.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
 				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,

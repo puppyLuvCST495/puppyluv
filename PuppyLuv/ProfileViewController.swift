@@ -11,25 +11,21 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     
-    @IBOutlet weak var profileImage: UIImageView!
-    
-    @IBOutlet weak var likeButton: UITabBarItem!
-    @IBOutlet weak var dislikeButton: UITabBarItem!
-    
+  
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeRound()
+        //makeRound()
         // Do any additional setup after loading the view.
     }
     
-    func makeRound(){
-        profileImage?.layer.cornerRadius = (profileImage?.frame.size.width ?? 0.0) / 2
-        profileImage?.clipsToBounds = true
-        profileImage?.layer.borderWidth = 3.0
-        profileImage?.layer.borderColor = UIColor.white.cgColor
-    }
+//    func makeRound(){
+//        profileImage?.layer.cornerRadius = (profileImage?.frame.size.width ?? 0.0) / 2
+//        profileImage?.clipsToBounds = true
+//        profileImage?.layer.borderWidth = 3.0
+//        profileImage?.layer.borderColor = UIColor.white.cgColor
+//    }
     
     
     

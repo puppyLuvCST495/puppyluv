@@ -421,7 +421,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4820" y="848"/>
+            <point key="canvasLocation" x="5199" y="429"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -446,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-xH-ZHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4819" y="1523"/>
+            <point key="canvasLocation" x="5199" y="1154"/>
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="fXP-Hp-WNd">
@@ -471,18 +471,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-cz-1cV">
-                                                    <rect key="frame" x="324" y="6" width="46" height="30"/>
-                                                    <state key="normal" title="Button"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-cz-1cV">
+                                                    <rect key="frame" x="339" y="10" width="47" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <gestureRecognizers/>
+                                                    <state key="normal" title="Button" image="photo" catalog="system"/>
                                                     <connections>
-                                                        <segue destination="EB9-kc-XgE" kind="show" id="sca-L8-xOz"/>
+                                                        <action selector="editProfile:" destination="hoa-Mm-Ehn" eventType="touchUpInside" id="QIY-9s-I7g"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="ae2-cz-1cV" firstAttribute="centerY" secondItem="U2F-pe-ldA" secondAttribute="centerY" id="E5J-Y0-CJY"/>
                                                 <constraint firstItem="yEq-I5-nOq" firstAttribute="leading" secondItem="U2F-pe-ldA" secondAttribute="leadingMargin" constant="10" id="HEd-jh-K8h"/>
-                                                <constraint firstAttribute="trailing" secondItem="ae2-cz-1cV" secondAttribute="trailing" constant="40" id="YAw-5X-uan"/>
                                                 <constraint firstItem="yEq-I5-nOq" firstAttribute="centerY" secondItem="U2F-pe-ldA" secondAttribute="centerY" id="ZPS-oB-FTr"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -500,8 +500,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-BB-Cg0">
-                                                    <rect key="frame" x="337" y="1.5" width="40" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-BB-Cg0">
+                                                    <rect key="frame" x="342" y="9" width="24" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="dSr-u3-PQg"/>
                                                         <constraint firstAttribute="height" constant="40" id="tHc-fB-a65"/>
@@ -603,18 +603,21 @@
                     </tableView>
                     <connections>
                         <outlet property="SettingTableView" destination="8hJ-yg-y8L" id="hTR-y0-dkw"/>
+                        <outlet property="editProfileButton" destination="ae2-cz-1cV" id="Ct9-5d-o8K"/>
                         <outlet property="logoutButtonLabel" destination="BLG-VX-dgi" id="dMo-3X-OtG"/>
+                        <segue destination="EB9-kc-XgE" kind="show" identifier="EditProfile" id="lKg-PG-cfY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9M-aq-MhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
+                <tapGestureRecognizer id="Dha-cN-HAj"/>
             </objects>
-            <point key="canvasLocation" x="4819.5652173913049" y="2180.6919642857142"/>
+            <point key="canvasLocation" x="5869" y="1154"/>
         </scene>
         <!--Setting Camera View Controller-->
         <scene sceneID="ihl-4Z-cPH">
             <objects>
-                <viewController id="EB9-kc-XgE" customClass="SettingCameraViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileEdit" id="EB9-kc-XgE" customClass="SettingCameraViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ta0-aF-Gcl">
                         <rect key="frame" x="0.0" y="0.0" width="407" height="781"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -663,7 +666,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5598" y="2181"/>
+            <point key="canvasLocation" x="6505" y="1154"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -738,7 +741,11 @@
                         <viewLayoutGuide key="safeArea" id="3X3-C8-9aU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="square.and.pencil" catalog="system" id="IlR-DI-Nh4"/>
-                    <navigationItem key="navigationItem" title="Feed" id="1xw-Ho-dh5"/>
+                    <navigationItem key="navigationItem" title="Feed" id="1xw-Ho-dh5">
+                        <barButtonItem key="rightBarButtonItem" image="camera.fill" catalog="system" id="rm7-qv-hC5">
+                            <color key="tintColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QYr-fV-Zs2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -767,7 +774,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URa-IT-iA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3912" y="1546"/>
+            <point key="canvasLocation" x="3048" y="1592"/>
         </scene>
         <!--Profile-->
         <scene sceneID="peG-my-O86">
@@ -873,6 +880,7 @@
         <image name="PuppyLuv-Logo" width="240" height="240"/>
         <image name="PuppyLuv-Logo-withText" width="240" height="240"/>
         <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
         <image name="doggie" width="1280" height="720"/>
         <image name="dooggg" width="2048" height="1365"/>
         <image name="eat dog" width="276" height="183"/>
@@ -882,6 +890,7 @@
         <image name="map" catalog="system" width="64" height="56"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="wo dog" width="275" height="183"/>
     </resources>

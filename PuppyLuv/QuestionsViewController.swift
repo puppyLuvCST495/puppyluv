@@ -8,13 +8,33 @@
 
 import UIKit
 
-class QuestionsViewController: UIViewController {
+class QuestionsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+  
 
+    @IBOutlet weak var question1: UITextView!
+    @IBOutlet weak var picker: UIPickerView!
+    
+    let answers = ["Small","Medium","Big"]
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+          return 1
+      }
+      
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+          return answers[row]
+      }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return answers.count
+        }
+    
+     
+    func pickerView(_ pickerView: UIPickerView, didSelect row: Int, inComponent component: Int)  {
+        question1.text = answers[row]
+      }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-
+    
 
         // Do any additional setup after loading the view.
     }

@@ -14,8 +14,10 @@ import MessageInputBar
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     
     let myRefreshControl = UIRefreshControl()
-
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    
     let commentBar = MessageInputBar()
     var showCommentBar = false
     var posts = [PFObject]()
@@ -23,7 +25,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.tableView.reloadData()
         commentBar.inputTextView.placeholder = "Add a comment..."
         commentBar.sendButton.title = "Post"
         commentBar.delegate = self

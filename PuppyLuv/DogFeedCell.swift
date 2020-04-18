@@ -7,17 +7,30 @@
 //
 
 import UIKit
+import Parse
 
 class DogFeedCell: UITableViewCell {
     
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+
+    @IBOutlet weak var likeButton: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
+    @IBAction func heartClicked(_ sender: Any) {
+        
+        
+        
+    }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

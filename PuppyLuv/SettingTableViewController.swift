@@ -13,6 +13,7 @@ class SettingTableViewController: UITableViewController {
 
     @IBOutlet weak var logoutButtonLabel: UILabel!
 
+    @IBOutlet weak var editProfileButton: UIButton!
     
     
     @IBOutlet var SettingTableView: UITableView!
@@ -23,6 +24,9 @@ class SettingTableViewController: UITableViewController {
         let tapLogOut = UITapGestureRecognizer(target: self, action: #selector(SettingTableViewController.tapFunction))
         logoutButtonLabel.isUserInteractionEnabled = true
         logoutButtonLabel.addGestureRecognizer(tapLogOut)
+        
+      
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -42,8 +46,14 @@ class SettingTableViewController: UITableViewController {
         
         delegate.window?.rootViewController = loginView
     }
-
-   
+    
+    
+    @IBAction func editProfile(_ sender: Any) {
+        performSegue(withIdentifier: "EditProfile", sender: self)
+        
+    }
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

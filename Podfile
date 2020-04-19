@@ -9,5 +9,6 @@ target 'PuppyLuv' do
   pod 'Firebase/Database'
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageInputBar'
 
 end

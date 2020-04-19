@@ -264,7 +264,7 @@
         <!--Question 2-->
         <scene sceneID="SIh-03-rVn">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="7Wg-GQ-l20" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7Wg-GQ-l20" customClass="QuestionTwoViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GSC-sd-lsF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,7 +301,7 @@
         <!--Question 3-->
         <scene sceneID="ftf-1x-ASA">
             <objects>
-                <viewController id="7X7-oS-NlN" sceneMemberID="viewController">
+                <viewController id="7X7-oS-NlN" customClass="QuestionThreeViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OIp-Ld-h5R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,7 +334,7 @@
         <!--Question 4-->
         <scene sceneID="bEA-Bu-qdw">
             <objects>
-                <viewController id="NbX-63-eq3" sceneMemberID="viewController">
+                <viewController id="NbX-63-eq3" customClass="QuestionFourViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kl2-WX-T3g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -367,7 +367,7 @@
         <!--Result-->
         <scene sceneID="VdM-dt-uts">
             <objects>
-                <viewController id="DFu-KH-WfV" sceneMemberID="viewController">
+                <viewController id="DFu-KH-WfV" customClass="ResultViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ug-h0-VWi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

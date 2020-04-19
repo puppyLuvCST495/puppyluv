@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuestionsViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
   
 
     @IBOutlet weak var question1: UITextView!

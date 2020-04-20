@@ -14,9 +14,6 @@ class QuizViewController: UIViewController {
     // Label
     @IBOutlet weak var questionLabel: UILabel!
     
-
-    
-    
     
     // Variables
     var currentQuestion = 0

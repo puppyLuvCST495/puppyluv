@@ -15,7 +15,7 @@
 		35403BFD23FE0DC200795A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BFB23FE0DC200795A5B /* LaunchScreen.storyboard */; };
 		A2DAFD95E06DF9DB28F7BB52 /* Pods_PuppyLuv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */; };
 		A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94724355CA900C94A41 /* QuizViewController.swift */; };
-		A349A94C2435852700C94A41 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94B2435852700C94A41 /* QuestionsViewController.swift */; };
+		A349A94C2435852700C94A41 /* QuestionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94B2435852700C94A41 /* QuestionOneViewController.swift */; };
 		A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39B9242993FC00E76313 /* SettingViewController.swift */; };
 		A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39BB24299AED00E76313 /* SettingTableViewController.swift */; };
 		A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A52444ED85009F96BB /* FeedViewController.swift */; };
@@ -26,6 +26,10 @@
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
 		A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C924204A1F00BBD665 /* ProfileViewController.swift */; };
+		A3F28559244CF60C00FC6329 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F28558244CF60C00FC6329 /* QuestionTwoViewController.swift */; };
+		A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */; };
+		A3F2855D244CF62D00FC6329 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */; };
+		A3F2855F244CF63800FC6329 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2855E244CF63800FC6329 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +44,7 @@
 		6C928C1B6910AF8895171472 /* Pods-PuppyLuv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.release.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.release.xcconfig"; sourceTree = "<group>"; };
 		7C9D2B0B6D6F778B5D4B72D6 /* Pods-PuppyLuv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuppyLuv.debug.xcconfig"; path = "Target Support Files/Pods-PuppyLuv/Pods-PuppyLuv.debug.xcconfig"; sourceTree = "<group>"; };
 		A349A94724355CA900C94A41 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		A349A94B2435852700C94A41 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		A349A94B2435852700C94A41 /* QuestionOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOneViewController.swift; sourceTree = "<group>"; };
 		A38C39B9242993FC00E76313 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A38C39BB24299AED00E76313 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A38C79A52444ED85009F96BB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +55,10 @@
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A38E69C924204A1F00BBD665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A3F28558244CF60C00FC6329 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
+		A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionThreeViewController.swift; sourceTree = "<group>"; };
+		A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
+		A3F2855E244CF63800FC6329 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		ACAB132A255D329FBB0686A4 /* Pods_PuppyLuv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuppyLuv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,12 +108,16 @@
 				A38C39B9242993FC00E76313 /* SettingViewController.swift */,
 				A38C39BB24299AED00E76313 /* SettingTableViewController.swift */,
 				A349A94724355CA900C94A41 /* QuizViewController.swift */,
-				A349A94B2435852700C94A41 /* QuestionsViewController.swift */,
+				A349A94B2435852700C94A41 /* QuestionOneViewController.swift */,
 				A38C79A52444ED85009F96BB /* FeedViewController.swift */,
 				018309D324451B6D00271880 /* SettingCameraViewController.swift */,
 				A38C79A9244A3D4E009F96BB /* FeedCameraViewController.swift */,
 				A38C79AB244A4781009F96BB /* DogFeedCell.swift */,
 				A38C79AD244A5FDE009F96BB /* CommentCell.swift */,
+				A3F28558244CF60C00FC6329 /* QuestionTwoViewController.swift */,
+				A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */,
+				A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */,
+				A3F2855E244CF63800FC6329 /* ResultViewController.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -243,19 +255,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				018309D424451B6D00271880 /* SettingCameraViewController.swift in Sources */,
-				A349A94C2435852700C94A41 /* QuestionsViewController.swift in Sources */,
+				A3F2855F244CF63800FC6329 /* ResultViewController.swift in Sources */,
+				A349A94C2435852700C94A41 /* QuestionOneViewController.swift in Sources */,
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
+				A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */,
 				A38C79AE244A5FDE009F96BB /* CommentCell.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
 				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
 				A38C79AA244A3D4E009F96BB /* FeedCameraViewController.swift in Sources */,
 				A38C79AC244A4781009F96BB /* DogFeedCell.swift in Sources */,
+				A3F28559244CF60C00FC6329 /* QuestionTwoViewController.swift in Sources */,
 				A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */,
 				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
 				A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */,
+				A3F2855D244CF62D00FC6329 /* QuestionFourViewController.swift in Sources */,
 				35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

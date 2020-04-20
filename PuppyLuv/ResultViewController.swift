@@ -1,20 +1,22 @@
 //
-//  QuestionsViewController.swift
+//  ResultViewController.swift
 //  PuppyLuv
 //
-//  Created by Pernille Dahl on 4/1/20.
+//  Created by Pernille Dahl on 4/19/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
 
 import UIKit
 
-class QuestionsViewController: UIViewController {
+class ResultViewController: UIViewController {
 
+    var allAnswers = [String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
-
+        print(allAnswers)
 
         // Do any additional setup after loading the view.
     }

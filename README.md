@@ -30,10 +30,14 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 - [x] user will be able to sign in or sign up
 - [x] user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
 - [x] user will have the ability to take the quiz
-- [ ] results of the quiz will be shown
+- [x] results of the quiz will be shown
 - [ ] there will be a map showing the closest dog shelters
 - [x] user will have a profile page
-- [ ] user can like or dislike the breed results
+- [ ] user can like breed from feed
+- [x] user can upload their own puppy images to feed 
+- [x] user can comment on posts in the feed 
+- [ ] user can view a collection view of their liked dogs
+- [x] error message shown to user if log in with wrong username or password
 
 **Optional Nice-to-have Stories**
 - [ ] user can change the map to a list view of the closest shelters
@@ -55,6 +59,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 * home view controller
   * show what PuppyLuv is about
   * give ability to go to quiz with a button
+  * ability to to straight to the profile page
 * quiz view controller
   * ability to take quiz and go back/next on questions
   * shows an image/illustrations to go with each question/selection
@@ -70,6 +75,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 **Tab Navigation** (Tab to Screen)
 * home
 * quiz
+* feed 
 * map
 * profile
 
@@ -99,7 +105,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 <img src="https://imgur.com/qU201Ad.jpg" width=150> <img src="https://imgur.com/kpJ099A.jpg" width=150> <img src="https://imgur.com/DyPBMKG.jpg" width=150> <img src="https://imgur.com/rQ8KBLq.jpg" width=150> <img src="https://imgur.com/L4LGRlS.jpg" width=150>
 
 ### [BONUS] Interactive Prototype
-<img src='https://recordit.co/zEt9WIkmgJ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/vH9FGdbYOw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 

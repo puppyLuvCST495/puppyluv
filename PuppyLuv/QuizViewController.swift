@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class QuizViewController: UIViewController {
     
@@ -14,50 +15,40 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     
     
-    // Questions and answer options
-    let questions = ["What is your experience with dogs?",
-                     "How much time can you put into training your dog?",
-                     "What is your home like?",
-                     "Do you prefer only to see dogs that are suitable for apartments?",
-                     "Do you have kida under age 10?",
-                     "What is your noise tolerance for barking?",
-                     "What is your tolerance for shedding?",
-                     "What is your activity level?"
-    ]
-    let answers = [
-        ["New to dogs", "Currently own a dog", "Owned a dog in the past"],
-        ["1-5 Hourd a week", "5-10 hours a week"],
-        ["An apartment", "A house with a small yard", "A house with a large yard"],
-        ["Yes", "No"],
-        ["Yes", "No"],
-        ["Only when necessary", "Likes to be vocal"],
-        ["Infrequent", "Frequent"],
-        ["Hanging on the couch", "Wlaking around the neighborhood", "Going on an adventure"],
-        
-    ]
-    
     // Variables
     var currentQuestion = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+       //  var breed = []
+        
     }
+          override func viewDidAppear(_ animated: Bool) {
+                    super.viewDidAppear(animated)
+                        let query = PFQuery(className:"Breeds")
+                               query.whereKey("Weight", contains: "under")
+                               query.whereKey("Lifespane", contains: "12")
+                          query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+                              if let error = error {
+                                  // Log details of the failure
+                                  print(error.localizedDescription)
+                              } else if let objects = objects {
+                                  // The find succeeded.
+                                  print("Successfully retrieved \(objects.count) breeds.")
+                                  // Do something with the found objects
+                                  for object in objects {
+                             
+                                  print(object)
+                                   
+                                  }
+                              }
+                          }
+                }
     
-    
+
  
     
-    
 
-    /*
-    // MARK: - Navigation
+ }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}

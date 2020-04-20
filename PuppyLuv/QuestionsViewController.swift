@@ -34,7 +34,7 @@ class QuestionsViewController: UIViewController, UIPickerViewDataSource, UIPicke
         selectedBreeds = answers[row]
           
         return question1.text = answers[row]
-        print("dick  \(selectedBreeds)")
+        print("hello\(selectedBreeds)")
 }
   
     

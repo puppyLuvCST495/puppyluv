@@ -38,6 +38,8 @@ class ResultViewController: UIViewController {
                                   query.whereKey("Engery", contains: allAnswers[2])
                                   query.whereKey("Shedding", containedIn: shedding[allAnswers[3]]!)
                                   //query.whereKey("Energy", containedIn: energy[allAnswers[2]])
+
+
                 
                
             
@@ -59,6 +61,7 @@ class ResultViewController: UIViewController {
                              }
                    }
        
+
 
     
 }

@@ -22,13 +22,13 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
        //  var breed = []
-        
+/*
     }
           override func viewDidAppear(_ animated: Bool) {
                     super.viewDidAppear(animated)
                         let query = PFQuery(className:"Breeds")
-                               query.whereKey("Weight", contains: "under")
-                               query.whereKey("Lifespane", contains: "12")
+                               query.whereKey("Weight", greaterThanOrEqualTo: "15")
+                              // query.whereKey("Lifespane", contains: "12")
                           query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
                               if let error = error {
                                   // Log details of the failure
@@ -42,6 +42,7 @@ class QuizViewController: UIViewController {
                                   print(object)
                                    
                                   }
+                                print("Successfully retrieved \(objects.count) breeds.")
                               }
                           }
                 }
@@ -52,3 +53,6 @@ class QuizViewController: UIViewController {
 
  }
 
+*/
+}
+}

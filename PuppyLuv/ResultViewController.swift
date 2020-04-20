@@ -5,7 +5,6 @@
 //  Created by Pernille Dahl on 4/19/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
-
 import UIKit
 import Parse
 
@@ -40,6 +39,7 @@ class ResultViewController: UIViewController {
                                   query.whereKey("Shedding", containedIn: shedding[allAnswers[3]]!)
                                   //query.whereKey("Energy", containedIn: energy[allAnswers[2]])
 
+
                 
                
             
@@ -61,6 +61,7 @@ class ResultViewController: UIViewController {
                              }
                    }
        
+
 
     
 }

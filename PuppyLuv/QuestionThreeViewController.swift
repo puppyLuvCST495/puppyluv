@@ -14,7 +14,7 @@ class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPi
     @IBOutlet weak var picker3: UIPickerView!
     var recievedAnswer2 = [String]()
     
-    let answers3 = ["Yes","No"]
+    let answers3 = ["Regular Exercise","Energetic","Needs lots of Activity","Calm","Regular"]
     var str3 = [String]()
     
     

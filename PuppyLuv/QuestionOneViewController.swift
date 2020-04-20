@@ -20,7 +20,7 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
           return 1
       }
       
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
           return answers[row]
       }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -28,7 +28,7 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
         }
     
      
-    func pickerView(_ pickerView: UIPickerView, didSelect row: Int, inComponent component: Int)  {
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
         question1.text = answers[row]
       }
     

@@ -12,18 +12,35 @@ import Parse
 class HomeViewController: UIViewController {
 
   
+    @IBOutlet weak var intoView: UIView!
+    @IBOutlet weak var quizView: UIView!
+    @IBOutlet weak var profileView: UIView!
+    
+    @IBOutlet weak var toProfileButton: UIButton!
+    @IBOutlet weak var toQuizButton: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
+        intoView.layer.cornerRadius = 15
+        intoView.layer.masksToBounds = true
         
-
+        quizView.layer.cornerRadius = 15
+        quizView.layer.masksToBounds = true
+        
+        profileView.layer.cornerRadius = 15
+        profileView.layer.masksToBounds = true
+        
+        toProfileButton.tintColor = UIColor.white
         // Do any additional setup after loading the view.
     }
     
-    
+
+    @IBAction func goToQuizButton(_ sender: Any) {
+        performSegue(withIdentifier: "toQuizView", sender: self)
+    }
     
     
     

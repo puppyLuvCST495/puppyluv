@@ -8,23 +8,52 @@
 
 import UIKit
 
-class QuestionTwoViewController: UIViewController {
+class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+
+      
+    
+    @IBOutlet weak var question2: UITextView!
+    
+    @IBOutlet weak var picker2: UIPickerView!
+    
+    var recievedAnswer = [String]()
+    
+    let answers1 = ["Yes","No"]
+    var str1 = [String]()
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+         return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+             return answers1[row]
+         }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return answers1.count
+    }
+    
+      func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
+          str1 = recievedAnswer
+          return str1.append(answers1[row])
+        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var threeVC: QuestionThreeViewController = segue.destination as! QuestionThreeViewController
+        
+        threeVC.recievedAnswer2 = str1
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        picker2.delegate = self
+        picker2.dataSource = self
 
-        // Do any additional setup after loading the view.
+        print(recievedAnswer)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

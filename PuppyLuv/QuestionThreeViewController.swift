@@ -8,12 +8,49 @@
 
 import UIKit
 
-class QuestionThreeViewController: UIViewController {
-
+class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
+    @IBOutlet weak var question3: UITextView!
+    
+    @IBOutlet weak var picker3: UIPickerView!
+    var recievedAnswer2 = [String]()
+    
+    let answers3 = ["Yes","No"]
+    var str3 = [String]()
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+         return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+             return answers3[row]
+         }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return answers3.count
+    }
+    
+      func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
+          str3 = recievedAnswer2
+          return str3.append(answers3[row])
+        }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var fourVC: QuestionFourViewController = segue.destination as! QuestionFourViewController
+        
+        fourVC.recievedAnswer3 = str3
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        picker3.delegate = self
+        picker3.dataSource = self
 
         // Do any additional setup after loading the view.
+        print(recievedAnswer2)
     }
     
 

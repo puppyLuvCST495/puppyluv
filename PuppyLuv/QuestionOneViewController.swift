@@ -14,7 +14,7 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var question1: UITextView!
     @IBOutlet weak var picker: UIPickerView!
     
-    let answers = ["Small","Medium","Big"]
+    let answers = ["Independent","Easy to Train","Agreeable","May be Stubborn","Eager to Please"]
     var str = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

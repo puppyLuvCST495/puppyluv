@@ -229,7 +229,7 @@
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPV-hn-3RT">
-                                <rect key="frame" x="37" y="742" width="340" height="50"/>
+                                <rect key="frame" x="37" y="693" width="340" height="50"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="B37-zP-fXI"/>
@@ -277,7 +277,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-2t-Ary">
-                                <rect key="frame" x="37" y="742" width="340" height="50"/>
+                                <rect key="frame" x="37" y="693" width="340" height="50"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="FHv-Av-G4b"/>
@@ -314,7 +314,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-Gz-Tfz">
-                                <rect key="frame" x="36" y="742" width="342" height="50"/>
+                                <rect key="frame" x="36" y="693" width="342" height="50"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="LR4-uO-JJI"/>
@@ -352,7 +352,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-zI-aeV">
-                                <rect key="frame" x="36" y="742" width="342" height="50"/>
+                                <rect key="frame" x="36" y="693" width="342" height="50"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="340" id="AtX-90-h9x"/>
@@ -390,14 +390,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-zX-WLa">
-                                <rect key="frame" x="319" y="786" width="75" height="22"/>
+                                <rect key="frame" x="20" y="757" width="75" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" " image="chevron.right" catalog="system">
+                                <state key="normal" title=" " image="arrow.down" catalog="system">
                                     <color key="titleColor" red="0.6634137376" green="0.3102240154" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="uSd-lE-Hgb" kind="show" id="i12-SO-V0o"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -417,8 +414,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJY-kq-Z5O">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="261"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hJY-kq-Z5O">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="263"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhl-mr-Gdd">
                                         <rect key="frame" x="138" y="152" width="128" height="30"/>
@@ -475,7 +472,6 @@
                                         </state>
                                         <connections>
                                             <action selector="goToQuizButton:" destination="fRL-e3-p2D" eventType="touchUpInside" id="2zf-7Y-MdV"/>
-                                            <segue destination="4w0-yO-lPQ" kind="modal" identifier="toQuizView" id="cUz-AD-vsn"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionDog" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-WF-UC7">
@@ -509,6 +505,9 @@
                                         <rect key="frame" x="251" y="90" width="48" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="arrowshape.turn.up.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="goToProfile:" destination="fRL-e3-p2D" eventType="touchUpInside" id="uW3-gF-hlP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.90474132632880133" green="0.65767098094274701" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1270,18 +1269,14 @@
             <point key="canvasLocation" x="4499" y="834"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="cUz-AD-vsn"/>
-        <segue reference="i12-SO-V0o"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="PuppyLuv-Logo" width="240" height="240"/>
         <image name="PuppyLuv-Logo-withText" width="240" height="240"/>
+        <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="cameraplaceholder" width="400" height="284"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="doggie" width="1280" height="720"/>
         <image name="dooggg" width="2048" height="1365"/>
         <image name="eat dog" width="276" height="183"/>

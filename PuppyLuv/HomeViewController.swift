@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         intoView.layer.cornerRadius = 15
         intoView.layer.masksToBounds = true
         
@@ -39,10 +41,13 @@ class HomeViewController: UIViewController {
     
 
     @IBAction func goToQuizButton(_ sender: Any) {
-        performSegue(withIdentifier: "toQuizView", sender: self)
+        self.tabBarController?.selectedIndex = 1
     }
     
     
+    @IBAction func goToProfile(_ sender: Any) {
+        self.tabBarController?.selectedIndex = 4
+    }
     
     /*
     // MARK: - Navigation

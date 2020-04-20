@@ -15,6 +15,8 @@ class QuestionsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var picker: UIPickerView!
     
     let answers = ["Small","Medium","Big"]
+    var selectedBreeds: String?
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
           return 1
@@ -29,12 +31,16 @@ class QuestionsViewController: UIViewController, UIPickerViewDataSource, UIPicke
     
      
     func pickerView(_ pickerView: UIPickerView, didSelect row: Int, inComponent component: Int)  {
-        question1.text = answers[row]
-      }
+        selectedBreeds = answers[row]
+          
+        return question1.text = answers[row]
+        print("dick  \(selectedBreeds)")
+}
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+       
 
         // Do any additional setup after loading the view.
     }

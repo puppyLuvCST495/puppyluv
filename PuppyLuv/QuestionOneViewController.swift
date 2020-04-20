@@ -5,7 +5,6 @@
 //  Created by Pernille Dahl on 4/1/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
-
 import UIKit
 
 class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
@@ -14,7 +13,7 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var question1: UITextView!
     @IBOutlet weak var picker: UIPickerView!
     
-    let answers = ["Small","Medium","Big"]
+    let answers = ["Independent","Easy to Train","Agreeable","May be Stubborn","Eager to Please"]
     var str = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

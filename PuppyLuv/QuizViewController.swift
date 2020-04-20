@@ -23,25 +23,30 @@ class QuizViewController: UIViewController {
         
        //  var breed = []
         
-          let query = PFQuery(className:"Breeds")
-          query.whereKey("Weight", contains: "under")
-           query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
-               if let error = error {
-                   // Log details of the failure
-                   print(error.localizedDescription)
-               } else if let objects = objects {
-                   // The find succeeded.
-                   print("Successfully retrieved \(objects.count) breeds.")
-                   // Do something with the found objects
-                   for object in objects {
-              
-                   print(object)
-                    
-                   }
-               }
-           }
+    }
+          override func viewDidAppear(_ animated: Bool) {
+                    super.viewDidAppear(animated)
+                        let query = PFQuery(className:"Breeds")
+                               query.whereKey("Weight", contains: "under")
+                               query.whereKey("Lifespane", contains: "12")
+                          query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+                              if let error = error {
+                                  // Log details of the failure
+                                  print(error.localizedDescription)
+                              } else if let objects = objects {
+                                  // The find succeeded.
+                                  print("Successfully retrieved \(objects.count) breeds.")
+                                  // Do something with the found objects
+                                  for object in objects {
+                             
+                                  print(object)
+                                   
+                                  }
+                              }
+                          }
+                }
     
-}
+
  
     
 

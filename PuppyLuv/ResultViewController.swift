@@ -10,8 +10,13 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    var allAnswers = [String]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(allAnswers)
 
         // Do any additional setup after loading the view.
     }

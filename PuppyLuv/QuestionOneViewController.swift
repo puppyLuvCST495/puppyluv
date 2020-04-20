@@ -15,6 +15,7 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     @IBOutlet weak var picker: UIPickerView!
     
     let answers = ["Small","Medium","Big"]
+    var str = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
           return 1
@@ -29,25 +30,27 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     
      
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
-        question1.text = answers[row]
+        str = [String]()
+        return str.append(answers[row])
       }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var secondVC: QuestionTwoViewController = segue.destination as! QuestionTwoViewController
+        
+        secondVC.recievedAnswer = str
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        picker.delegate = self
+        picker.dataSource = self
     
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

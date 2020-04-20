@@ -11,6 +11,7 @@ import UIKit
 class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var question3: UITextView!
     
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var picker3: UIPickerView!
     var recievedAnswer2 = [String]()
     
@@ -48,6 +49,8 @@ class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPi
         
         picker3.delegate = self
         picker3.dataSource = self
+        
+        nextButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
         print(recievedAnswer2)

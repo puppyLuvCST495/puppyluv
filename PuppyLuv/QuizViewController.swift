@@ -13,14 +13,18 @@ class QuizViewController: UIViewController {
     
     // Label
     @IBOutlet weak var questionLabel: UILabel!
-    
-    
+
+    @IBOutlet weak var titleView: UIView!
+    @IBOutlet weak var StartQuizButton: UIButton!
     // Variables
     var currentQuestion = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        StartQuizButton.layer.cornerRadius = 10
+        titleView.layer.cornerRadius = 10
         
+    }
        //  var breed = []
 /*
     }
@@ -54,5 +58,5 @@ class QuizViewController: UIViewController {
  }
 
 */
-}
+
 }

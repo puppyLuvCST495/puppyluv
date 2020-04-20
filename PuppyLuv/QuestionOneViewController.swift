@@ -10,6 +10,7 @@ import UIKit
 class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
   
 
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var question1: UITextView!
     @IBOutlet weak var picker: UIPickerView!
     
@@ -45,6 +46,8 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         picker.delegate = self
         picker.dataSource = self
+        
+        nextButton.layer.cornerRadius = 10
     
 
         // Do any additional setup after loading the view.

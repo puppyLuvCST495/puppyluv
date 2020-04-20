@@ -11,6 +11,7 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
 
       
     
+    @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var question2: UITextView!
     
     @IBOutlet weak var picker2: UIPickerView!
@@ -51,6 +52,7 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         picker2.delegate = self
         picker2.dataSource = self
+        nextButton.layer.cornerRadius = 10
 
         print(recievedAnswer)
     }

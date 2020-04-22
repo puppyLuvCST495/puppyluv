@@ -29,7 +29,7 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.tableView.reloadData()
+       // self.tableView.reloadData()
         print(allAnswers)
 
         // Do any additional setup after loading the view.
@@ -64,9 +64,14 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
                                    //  print("Successfully retrieved \(objects.count) breeds.")
                                     self.object = objects
                                     self.tableView.reloadData()
+                                    
                                      }
                                  }
                              
+           
+      
+                
+                
                              }
     
 

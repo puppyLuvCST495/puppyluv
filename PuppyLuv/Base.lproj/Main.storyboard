@@ -155,8 +155,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-Cp-YPA">
-                                <rect key="frame" x="30" y="290" width="354" height="148"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-Cp-YPA">
+                                <rect key="frame" x="30" y="290" width="354" height="101.5"/>
                                 <string key="text">In this quiz, you will be asked some multiple choice questions that will help gauge the perfect dog for you. Each question will have a short explanation to better help you, if necessary.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -201,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7H-YG-CHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2279.7101449275365" y="833.70535714285711"/>
+            <point key="canvasLocation" x="2280" y="834"/>
         </scene>
         <!--QuestionViewController-->
         <scene sceneID="JVY-jf-nqW">
@@ -437,69 +437,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-zX-WLa">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-zX-WLa">
                                 <rect key="frame" x="20" y="757" width="75" height="22"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="Ejf-gj-1J6"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title=" " image="arrow.down" catalog="system">
                                     <color key="titleColor" red="0.6634137376" green="0.3102240154" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dRy-VV-fSt">
-                                <rect key="frame" x="0.0" y="-18" width="375" height="693"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsCell" rowHeight="250" id="zMs-yM-Fvn" customClass="ResultsCell" customModule="PuppyLuv" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="250"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zMs-yM-Fvn" id="8dd-4e-1u0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ii4-Ai-bQr">
-                                                    <rect key="frame" x="43" y="27" width="288" height="152"/>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="top" secondItem="8dd-4e-1u0" secondAttribute="topMargin" constant="46" id="7Ew-y9-uDX"/>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="leading" secondItem="8dd-4e-1u0" secondAttribute="leadingMargin" constant="30" id="NcY-eS-sNk"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ii4-Ai-bQr" secondAttribute="trailing" constant="46" id="ZUy-pn-2Vv"/>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="top" secondItem="8dd-4e-1u0" secondAttribute="topMargin" constant="46" id="ahw-OL-KEi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ii4-Ai-bQr" secondAttribute="bottom" constant="130" id="niB-u3-EKf"/>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="leading" secondItem="8dd-4e-1u0" secondAttribute="leadingMargin" constant="30" id="rxh-oU-TIl"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ii4-Ai-bQr" secondAttribute="trailing" constant="53" id="s6y-1x-Bc2"/>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="leading" secondItem="8dd-4e-1u0" secondAttribute="leadingMargin" constant="30" id="td9-yX-WmO"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ii4-Ai-bQr" secondAttribute="bottom" constant="130" id="twZ-BY-sYD"/>
-                                                <constraint firstItem="ii4-Ai-bQr" firstAttribute="top" secondItem="8dd-4e-1u0" secondAttribute="topMargin" constant="46" id="vCL-Iq-HXz"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="ResultImage" destination="ii4-Ai-bQr" id="zNi-hE-qQU"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Fxn-zX-WLa" firstAttribute="leading" secondItem="4ug-h0-VWi" secondAttribute="leadingMargin" constant="4" id="5zr-86-3Fq"/>
-                            <constraint firstItem="Fxn-zX-WLa" firstAttribute="top" secondItem="dRy-VV-fSt" secondAttribute="bottom" constant="82" id="Spp-V8-0ee"/>
-                            <constraint firstItem="dRy-VV-fSt" firstAttribute="bottom" secondItem="dIq-fM-mbc" secondAttribute="bottom" id="dpA-PF-ELe"/>
-                            <constraint firstItem="dRy-VV-fSt" firstAttribute="top" secondItem="4ug-h0-VWi" secondAttribute="topMargin" constant="-74" id="eua-Nw-wRB"/>
-                            <constraint firstItem="dRy-VV-fSt" firstAttribute="centerX" secondItem="4ug-h0-VWi" secondAttribute="centerX" id="id0-OT-49a"/>
-                            <constraint firstItem="dRy-VV-fSt" firstAttribute="leading" secondItem="dIq-fM-mbc" secondAttribute="leading" id="n1c-HT-ikt"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dIq-fM-mbc"/>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="QEl-NH-r6G"/>
-                    <connections>
-                        <outlet property="tableView" destination="dRy-VV-fSt" id="O3J-P2-jW7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6NA-nn-F1Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756" y="1547.2906403940888"/>
+            <point key="canvasLocation" x="2756.521739130435" y="1547.5446428571429"/>
         </scene>
         <!--Home-->
         <scene sceneID="sIE-KD-dnE">
@@ -926,11 +879,7 @@
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
                 <tapGestureRecognizer id="Dha-cN-HAj"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="7296" y="145"/>
-=======
-            <point key="canvasLocation" x="4438" y="2185"/>
->>>>>>> db61fa17b42d1fbbb8e8c8482862d5dc522803c3
         </scene>
         <!--Setting Camera View Controller-->
         <scene sceneID="g9a-dj-uZM">
@@ -971,11 +920,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KE-YP-Awg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mfZ-1N-gwq"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="8051" y="154"/>
-=======
-            <point key="canvasLocation" x="5143" y="2183"/>
->>>>>>> db61fa17b42d1fbbb8e8c8482862d5dc522803c3
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -1181,7 +1126,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-aB-omo">
-                                <rect key="frame" x="0.0" y="469" width="375" height="46"/>
+                                <rect key="frame" x="15" y="477" width="384" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -1208,11 +1153,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="5932" y="834"/>
-=======
-            <point key="canvasLocation" x="5932" y="833.49753694581284"/>
->>>>>>> db61fa17b42d1fbbb8e8c8482862d5dc522803c3
         </scene>
         <!--Likes-->
         <scene sceneID="CLL-Gq-Sc8">
@@ -1370,21 +1311,12 @@
         <image name="doggie" width="1280" height="720"/>
         <image name="dooggg" width="2048" height="1365"/>
         <image name="eat dog" width="276" height="183"/>
-<<<<<<< HEAD
         <image name="folder" catalog="system" width="128" height="95"/>
         <image name="folder.fill" catalog="system" width="128" height="95"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="map" catalog="system" width="128" height="113"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
-=======
-        <image name="folder" catalog="system" width="64" height="46"/>
-        <image name="folder.fill" catalog="system" width="64" height="46"/>
-        <image name="heart" catalog="system" width="64" height="54"/>
-        <image name="map" catalog="system" width="64" height="56"/>
-        <image name="person.circle" catalog="system" width="64" height="60"/>
-        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
->>>>>>> db61fa17b42d1fbbb8e8c8482862d5dc522803c3
         <image name="questionDog" width="256" height="256"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="wo dog" width="275" height="183"/>

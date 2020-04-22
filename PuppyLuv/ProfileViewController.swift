@@ -38,6 +38,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         profileImageView.af_setImage(withURL: url)
         
         displayNameLabel.text = PFUser.current()?["username"] as? String
+        descriptionLabel.text = PFUser.current()?["profile_description"] as? String
     }
     
 //    func makeRound(){

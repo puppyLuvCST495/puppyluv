@@ -621,21 +621,22 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-my-Zfn">
-                                        <rect key="frame" x="119.5" y="0.5" width="175" height="166"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-my-Zfn">
+                                        <rect key="frame" x="119.5" y="10.5" width="175" height="174"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="P5o-1R-Wvs"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="175" id="3yA-B1-hok"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="P5o-1R-Wvs"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-zf-BSQ">
-                                        <rect key="frame" x="128.5" y="167" width="157" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name of User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-zf-BSQ">
+                                        <rect key="frame" x="128.5" y="207.5" width="157" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User description (if any). EX: I love puppies. All I want for Christmas is a Grey Pitbull. I only rescue!! &lt;3" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-aU-Qvu">
-                                        <rect key="frame" x="30" y="202" width="354" height="61"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-aU-Qvu">
+                                        <rect key="frame" x="30" y="242.5" width="354" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -647,11 +648,11 @@
                                     <constraint firstItem="Yz9-2b-MEf" firstAttribute="bottom" secondItem="pkJ-aU-Qvu" secondAttribute="bottom" constant="17" id="7Wz-EF-Pgp"/>
                                     <constraint firstItem="pkJ-aU-Qvu" firstAttribute="leading" secondItem="Yz9-2b-MEf" secondAttribute="leading" constant="30" id="EUf-s6-xj1"/>
                                     <constraint firstItem="RrI-my-Zfn" firstAttribute="centerX" secondItem="b3w-dX-IiO" secondAttribute="centerX" id="IGj-Kc-0b4"/>
-                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="top" secondItem="Yz9-2b-MEf" secondAttribute="top" id="eoE-b9-VhG"/>
+                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="top" secondItem="Yz9-2b-MEf" secondAttribute="top" constant="10" id="UCk-fX-TfD"/>
                                     <constraint firstItem="Yz9-2b-MEf" firstAttribute="trailing" secondItem="pkJ-aU-Qvu" secondAttribute="trailing" constant="30" id="ogy-2K-dTH"/>
                                     <constraint firstItem="pkJ-aU-Qvu" firstAttribute="top" secondItem="H0o-zf-BSQ" secondAttribute="bottom" constant="6" id="qHV-LH-vkc"/>
                                     <constraint firstItem="H0o-zf-BSQ" firstAttribute="centerX" secondItem="b3w-dX-IiO" secondAttribute="centerX" id="sep-fK-4Lh"/>
-                                    <constraint firstItem="H0o-zf-BSQ" firstAttribute="top" secondItem="RrI-my-Zfn" secondAttribute="bottom" id="zgl-vw-Lab"/>
+                                    <constraint firstItem="H0o-zf-BSQ" firstAttribute="top" secondItem="RrI-my-Zfn" secondAttribute="bottom" constant="10" id="zgl-vw-Lab"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Yz9-2b-MEf"/>
                             </view>

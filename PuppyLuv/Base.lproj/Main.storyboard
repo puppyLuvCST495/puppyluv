@@ -436,15 +436,6 @@
                     <view key="view" contentMode="scaleToFill" id="4ug-h0-VWi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxn-zX-WLa">
-                                <rect key="frame" x="20" y="757" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" " image="arrow.down" catalog="system">
-                                    <color key="titleColor" red="0.6634137376" green="0.3102240154" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="dIq-fM-mbc"/>
                     </view>
@@ -1304,7 +1295,6 @@
     <resources>
         <image name="PuppyLuv-Logo" width="240" height="240"/>
         <image name="PuppyLuv-Logo-withText" width="240" height="240"/>
-        <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="cameraplaceholder" width="400" height="284"/>

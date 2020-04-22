@@ -13,25 +13,44 @@ import Parse
 class SettingCameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBAction func submitImageButton(_ sender: Any) {
-    //        let user = PFObject(className: "User")
-    //
-    //        let imageData = settingImageView.image!.pngData()
-    //        let file = PFFileObject(data: imageData!)
-    //
-    //        user["profile_img"] = file
-    //
-    //        user.saveInBackground{ (success, error) in
-    //            if success{
-                    dismiss(animated: true, completion: nil)
-    //                print("saved!")
-    //            } else {
-    //                print("error!")
-    //            }
-    //        }
+//            let user = PFObject(className: "User")
+//
+        let imageData = settingImageView.image!.pngData()
+//            let file = PFFileObject(name: "profileImage.png", data: imageData!)
+//
+//            user["profile_img"] = file
+//            user["author"] = PFUser.current()
+//
+//            user.saveInBackground{ (success, error) in
+//                if success{
+//                    self.dismiss(animated: true, completion: nil)
+//                    print("saved!")
+//                } else {
+//                    print("error!")
+//                    print(error as Any)
+//                }
+//            }
+        
+        let imageFile = PFFileObject(name: "profileImage.png", data: imageData!)
+//        imageFile?.save()
+        let user = PFUser.current()
+        user?.setObject(imageFile as Any, forKey: "profile_img")
+        user?.saveInBackground(block: { (success, error) in
+            if(success){
+                print("saved!")
+                self.dismiss(animated: true, completion: nil)
+                print("dismissing view")
+            } else {
+                print("error!")
+                print(error as Any)
+            }
+        })
+        
     }
     
 
     @IBOutlet weak var settingImageView: UIImageView!
+    
     @IBAction func onTapCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self

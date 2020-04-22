@@ -7,17 +7,37 @@
 //
 
 import UIKit
+import AlamofireImage
+import Parse
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var displayNameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
-  
-    
-    
+      
     override func viewDidLoad() {
         super.viewDidLoad()
         //makeRound()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+//        let user = PFUser.current()
+
+        let query = PFQuery(className: "User")
+        query.includeKey("author")
+        
+        let imageFile = PFUser.current()?["profile_img"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+//
+        profileImageView.af_setImage(withURL: url)
+        
+        displayNameLabel.text = PFUser.current()?["username"] as? String
     }
     
 //    func makeRound(){

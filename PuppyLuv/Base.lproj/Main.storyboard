@@ -612,7 +612,7 @@
         <!--PuppyLuv-->
         <scene sceneID="JIy-re-uYa">
             <objects>
-                <viewController id="brY-6I-7tg" sceneMemberID="viewController">
+                <viewController id="brY-6I-7tg" customClass="ProfileViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PGp-AZ-gzB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -689,12 +689,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pkJ-aU-Qvu" id="iO3-lD-rYj"/>
+                        <outlet property="displayNameLabel" destination="H0o-zf-BSQ" id="bNi-s4-XrV"/>
+                        <outlet property="profileImageView" destination="RrI-my-Zfn" id="pBk-bR-ICG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="5707" y="117"/>
-
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -719,9 +722,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-xH-ZHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="6459" y="117"/>
-
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="fXP-Hp-WNd">
@@ -746,13 +747,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-cz-1cV">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ae2-cz-1cV">
                                                     <rect key="frame" x="324" y="6" width="46" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Edit"/>
                                                     <connections>
                                                         <segue destination="TDk-ue-1M3" kind="presentation" id="Nek-SJ-ofm"/>
-
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -880,24 +880,19 @@
                         <outlet property="SettingTableView" destination="8hJ-yg-y8L" id="hTR-y0-dkw"/>
                         <outlet property="editProfileButton" destination="ae2-cz-1cV" id="Ct9-5d-o8K"/>
                         <outlet property="logoutButtonLabel" destination="BLG-VX-dgi" id="dMo-3X-OtG"/>
-                        <segue destination="EB9-kc-XgE" kind="show" identifier="EditProfile" id="lKg-PG-cfY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9M-aq-MhZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
                 <tapGestureRecognizer id="Dha-cN-HAj"/>
             </objects>
-
-            <point key="canvasLocation" x="4438" y="2185"/>
-
+            <point key="canvasLocation" x="7164" y="117"/>
         </scene>
         <!--Setting Camera View Controller-->
         <scene sceneID="g9a-dj-uZM">
             <objects>
-
                 <viewController id="TDk-ue-1M3" customClass="SettingCameraViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k8U-rA-fN4">
-
                         <rect key="frame" x="0.0" y="0.0" width="407" height="781"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -944,9 +939,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-
-            <point key="canvasLocation" x="5143" y="2183"/>
-
+            <point key="canvasLocation" x="7860" y="117"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -1179,10 +1172,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-
-
             <point key="canvasLocation" x="5932" y="834"/>
-
         </scene>
         <!--Likes-->
         <scene sceneID="CLL-Gq-Sc8">
@@ -1207,9 +1197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URa-IT-iA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-
             <point key="canvasLocation" x="4499" y="1562"/>
-
         </scene>
         <!--Profile-->
         <scene sceneID="peG-my-O86">
@@ -1347,7 +1335,6 @@
         <image name="map" catalog="system" width="64" height="56"/>
         <image name="person.circle" catalog="system" width="64" height="60"/>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="photo" catalog="system" width="64" height="46"/>
         <image name="questionDog" width="256" height="256"/>
         <image name="square.and.pencil" catalog="system" width="64" height="58"/>
         <image name="wo dog" width="275" height="183"/>

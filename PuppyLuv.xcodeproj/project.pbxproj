@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		018309D424451B6D00271880 /* SettingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018309D324451B6D00271880 /* SettingCameraViewController.swift */; };
+		1AA9B7B12450BE3E0005550E /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9B7B02450BE3E0005550E /* ResultsCell.swift */; };
 		35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF223FE0DC100795A5B /* AppDelegate.swift */; };
 		35403BF523FE0DC100795A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF423FE0DC100795A5B /* ViewController.swift */; };
 		35403BF823FE0DC100795A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35403BF623FE0DC100795A5B /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		018309D324451B6D00271880 /* SettingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCameraViewController.swift; sourceTree = "<group>"; };
+		1AA9B7B02450BE3E0005550E /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
 		35403BEF23FE0DC100795A5B /* PuppyLuv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyLuv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35403BF223FE0DC100795A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35403BF423FE0DC100795A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */,
 				A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */,
 				A3F2855E244CF63800FC6329 /* ResultViewController.swift */,
+				1AA9B7B02450BE3E0005550E /* ResultsCell.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				A38C79AA244A3D4E009F96BB /* FeedCameraViewController.swift in Sources */,
 				A38C79AC244A4781009F96BB /* DogFeedCell.swift in Sources */,
 				A3F28559244CF60C00FC6329 /* QuestionTwoViewController.swift in Sources */,
+				1AA9B7B12450BE3E0005550E /* ResultsCell.swift in Sources */,
 				A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */,
 				A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */,
 				A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */,

@@ -162,8 +162,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nne-R1-2RP">
-                                <rect key="frame" x="75" y="338.66666666666669" width="264" height="85"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nne-R1-2RP">
+                                <rect key="frame" x="58" y="511" width="264" height="85"/>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="FfJ-VM-qgT"/>
@@ -646,7 +646,7 @@
         <!--PuppyLuv-->
         <scene sceneID="JIy-re-uYa">
             <objects>
-                <viewController id="brY-6I-7tg" sceneMemberID="viewController">
+                <viewController id="brY-6I-7tg" customClass="ProfileViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PGp-AZ-gzB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -723,6 +723,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="pkJ-aU-Qvu" id="pR9-hm-NxL"/>
+                        <outlet property="displayNameLabel" destination="H0o-zf-BSQ" id="PsN-2j-EYV"/>
+                        <outlet property="profileImageView" destination="RrI-my-Zfn" id="xbj-Ym-Oz5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -940,6 +945,10 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onTapCameraButton:" destination="EB9-kc-XgE" eventType="touchUpInside" id="1wC-at-jCA"/>
+                                    <action selector="submitImageButton:" destination="EB9-kc-XgE" eventType="touchUpInside" id="5KV-wc-vly"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -950,6 +959,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MbM-QQ-FyZ"/>
                     </view>
+                    <connections>
+                        <outlet property="settingImageView" destination="NA4-dl-NOO" id="LXS-Cw-1A0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6KE-YP-Awg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mfZ-1N-gwq"/>

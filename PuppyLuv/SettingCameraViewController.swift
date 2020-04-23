@@ -9,45 +9,44 @@ import UIKit
 import AlamofireImage
 import Parse
 class SettingCameraViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var profileDisplayNameField: UITextField!
+    @IBOutlet weak var profileDescriptionField: UITextField!
+    
+    
     @IBAction func submitImageButton(_ sender: Any) {
-//            let user = PFObject(className: "User")
-//
+        let userInfo = PFObject(className: "UserProfile")
+              
+        userInfo["display_name"] = profileDisplayNameField.text!
+        userInfo["description"] = profileDescriptionField.text!
+        userInfo["username"] = PFUser.current()!.username
+        userInfo["author"] = PFUser.current()!
+        
         let imageData = settingImageView.image!.pngData()
-//            let file = PFFileObject(name: "profileImage.png", data: imageData!)
-//
-//            user["profile_img"] = file
-//            user["author"] = PFUser.current()
-//
-//            user.saveInBackground{ (success, error) in
-//                if success{
-//                    self.dismiss(animated: true, completion: nil)
-//                    print("saved!")
-//                } else {
-//                    print("error!")
-//                    print(error as Any)
-//                }
-//            }
-        let imageFile = PFFileObject(name: "profileImage.png", data: imageData!)
-//        imageFile?.save()
-        let user = PFUser.current()
-        user?.setObject(imageFile as Any, forKey: "profile_img")
-        user?.saveInBackground(block: { (success, error) in
-            if(success){
-                print("saved!")
+        let imageFile = PFFileObject(data: imageData!)
+        
+        userInfo["profile_img"] = imageFile
+        
+        userInfo.saveInBackground{ (success, error) in
+            if success{
                 self.dismiss(animated: true, completion: nil)
-                print("dismissing view")
+                print("saved!")
             } else {
                 print("error!")
                 print(error as Any)
             }
-        })
+        }
     }
-    @IBOutlet weak var settingImageView: UIImageView!
     
+    
+    
+    @IBOutlet weak var settingImageView: UIImageView!
+        
     @IBAction func onTapCameraButton(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.allowsEditing = true
+        
         if UIImagePickerController.isSourceTypeAvailable(.camera){
             picker.sourceType = .camera
         } else {
@@ -55,6 +54,7 @@ class SettingCameraViewController: UIViewController, UIImagePickerControllerDele
         }
         present(picker, animated: true, completion: nil)
     }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[.editedImage] as! UIImage
         let size = CGSize(width: 300, height: 300)

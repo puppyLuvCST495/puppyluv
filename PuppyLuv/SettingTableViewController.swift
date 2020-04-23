@@ -13,7 +13,9 @@ class SettingTableViewController: UITableViewController {
 
     @IBOutlet weak var logoutButtonLabel: UILabel!
 
-    @IBOutlet weak var editProfileButton: UIButton!
+    
+    @IBOutlet weak var editProfileImageButton: UIButton!
+    
     
     
     @IBOutlet var SettingTableView: UITableView!

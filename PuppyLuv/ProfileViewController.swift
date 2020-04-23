@@ -15,31 +15,47 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
+    var users = [PFObject]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //makeRound()
         // Do any additional setup after loading the view.
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-    
         
-//        let user = PFObject(className: "User")
-        let user = PFUser.current()
-//        let query = PFQuery(className: "User")
-////        query.includeKeys(["username", "profile_img"])
-//        let imageFile = user!["profile_img"] as! PFFileObject
-//        let urlString = imageFile.url!
-//        let url = URL(string: urlString)!
-//        print(user!["profile_img"])
-//        print(imageFile)
-//        print(urlString)
-//        print(url)
+        let currentUser = PFUser.current()!.username
+        print(currentUser as Any)
+        let user = PFUser.current()!
+            
+        let query = PFQuery(className: "UserProfile")
+        query.whereKey("username", equalTo: currentUser as Any)
+        query.whereKey("author", equalTo: user as Any)
+
+        query.findObjectsInBackground { (users, error) in
+            if error == nil {
+                print("Successfully retrieved.")
+                print(users as Any)
+            } else {
+                print("Error:")
+                print(error as Any)
+            }
+        }
+
+        
+//        displayNameLabel.text = user["display_name"] as? String
+//        descriptionLabel.text = user["description"] as? String
+        
+        let imageFile = user["profile_img"] as! PFFileObject
+        print(imageFile)
+        let urlString = imageFile.url!
+        print(urlString)
+        let url = URL(string: urlString)!
+        print(url)
 //
-//        profileImageView.af_setImage(withURL: url)
-        displayNameLabel.text = PFUser.current()?["username"] as? String
-        descriptionLabel.text = PFUser.current()?["profile_description"] as? String
-//        print(PFUser.current()?["profile_description"])
+        profileImageView.af_setImage(withURL: url)
     }
     
     

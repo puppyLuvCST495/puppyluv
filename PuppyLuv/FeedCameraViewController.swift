@@ -16,8 +16,11 @@ class FeedCameraViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var commentField: UITextField!
     
+    @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        submitButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }

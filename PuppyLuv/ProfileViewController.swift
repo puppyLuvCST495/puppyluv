@@ -22,16 +22,24 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let user = PFUser()
-        let query = PFQuery(className: "User")
-        query.includeKeys(["author", "profile_img"])
-        let imageFile = user["profile_img"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
+    
+        
+//        let user = PFObject(className: "User")
+        let user = PFUser.current()
+//        let query = PFQuery(className: "User")
+////        query.includeKeys(["username", "profile_img"])
+//        let imageFile = user!["profile_img"] as! PFFileObject
+//        let urlString = imageFile.url!
+//        let url = URL(string: urlString)!
+//        print(user!["profile_img"])
+//        print(imageFile)
+//        print(urlString)
+//        print(url)
 //
-        profileImageView.af_setImage(withURL: url)
+//        profileImageView.af_setImage(withURL: url)
         displayNameLabel.text = PFUser.current()?["username"] as? String
         descriptionLabel.text = PFUser.current()?["profile_description"] as? String
+//        print(PFUser.current()?["profile_description"])
     }
     
     

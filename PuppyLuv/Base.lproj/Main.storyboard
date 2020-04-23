@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -1288,22 +1289,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Will show a collection view of liked dog breeds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-6j-L4N">
-                                <rect key="frame" x="30" y="100" width="355" height="21"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lpj-fM-3iY">
+                                <rect key="frame" x="0.0" y="115" width="414" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HaO-3H-tYk">
+                                    <size key="itemSize" width="172" height="141"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="akV-sc-wCQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="141"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Io7-E3-qJM">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="141"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cute dog" translatesAutoresizingMaskIntoConstraints="NO" id="USF-Bc-udQ">
+                                                    <rect key="frame" x="8" y="8" width="156" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="172" height="141"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Puppies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmx-93-pIH">
+                                <rect key="frame" x="121" y="80" width="167" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pawprint" translatesAutoresizingMaskIntoConstraints="NO" id="ZuM-C1-vH6">
+                                <rect key="frame" x="84" y="62" width="39" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="Jjl-iL-UUJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="NGa-6o-z3X"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZuM-C1-vH6" firstAttribute="top" secondItem="0Hw-R0-fNF" secondAttribute="top" constant="6" id="561-La-QSM"/>
+                            <constraint firstItem="Zmx-93-pIH" firstAttribute="leading" secondItem="0Hw-R0-fNF" secondAttribute="leading" constant="121" id="FuN-9M-hm6"/>
+                            <constraint firstItem="0Hw-R0-fNF" firstAttribute="trailing" secondItem="Zmx-93-pIH" secondAttribute="trailing" constant="126" id="IIJ-jj-S0f"/>
+                            <constraint firstItem="ZuM-C1-vH6" firstAttribute="leading" secondItem="0Hw-R0-fNF" secondAttribute="leading" constant="84" id="OeQ-Un-jl7"/>
+                            <constraint firstItem="Zmx-93-pIH" firstAttribute="top" secondItem="0Hw-R0-fNF" secondAttribute="top" constant="24" id="RCg-tc-1OQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0Hw-R0-fNF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Likes" image="heart" catalog="system" id="Lnk-yV-lzp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URa-IT-iA1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4499" y="1562"/>
+            <point key="canvasLocation" x="4498.5507246376819" y="1561.6071428571429"/>
         </scene>
         <!--Profile-->
         <scene sceneID="peG-my-O86">
@@ -1432,6 +1474,7 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
         <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="cameraplaceholder" width="400" height="284"/>
+        <image name="cute dog" width="1600" height="1200"/>
         <image name="doggie" width="1280" height="720"/>
         <image name="dooggg" width="2048" height="1365"/>
         <image name="eat dog" width="276" height="183"/>
@@ -1440,6 +1483,7 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="images-1" width="247" height="152"/>
         <image name="map" catalog="system" width="128" height="113"/>
+        <image name="pawprint" width="812" height="812"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="questionDog" width="256" height="256"/>

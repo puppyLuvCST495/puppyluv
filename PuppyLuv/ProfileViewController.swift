@@ -50,7 +50,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
 //        displayNameLabel.text = user["display_name"] as? String
 //        descriptionLabel.text = user["description"] as? String
         
-        let imageFile = user["profile_img"] as! PFFileObject
+        let imageFile = user["image"] as! PFFileObject
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         

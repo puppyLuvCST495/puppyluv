@@ -17,19 +17,20 @@ class SettingCameraViewController: UIViewController, UIImagePickerControllerDele
     @IBAction func submitImageButton(_ sender: Any) {
         
         
-        let userInfo = PFObject(className: "UserProfile")
+//        let userInfo = PFObject(className: "UserProfile")
+        let user = PFUser.current()
               
-        userInfo["display_name"] = profileDisplayNameField.text!
-        userInfo["description"] = profileDescriptionField.text!
-        userInfo["username"] = PFUser.current()!.username
-        userInfo["author"] = PFUser.current()!
+        user?["display_name"] = profileDisplayNameField.text!
+        user?["description"] = profileDescriptionField.text!
+        user?["username"] = PFUser.current()!.username
+        user?["author"] = PFUser.current()!
         
         let imageData = settingImageView.image!.pngData()
         let imageFile = PFFileObject(data: imageData!)
         
-        userInfo["image"] = imageFile
+        user?["image"] = imageFile
         
-        userInfo.saveInBackground{ (success, error) in
+        user?.saveInBackground{ (success, error) in
             if success{
                 self.dismiss(animated: true, completion: nil)
                 print("saved!")

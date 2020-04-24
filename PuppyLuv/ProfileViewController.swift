@@ -29,15 +29,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let currentUser = PFUser.current()!.username
         print(currentUser as Any)
         let user = PFUser.current()!
-            
+//
         let query = PFQuery(className: "UserProfile")
         query.whereKey("username", equalTo: currentUser as Any)
         query.whereKey("author", equalTo: user as Any)
-
+//
         query.findObjectsInBackground { (users, error) in
             if error == nil {
                 print("Successfully retrieved.")
-                print(users as Any)
+//                print(users as Any)
             } else {
                 print("Error:")
                 print(error as Any)
@@ -45,14 +45,18 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
 
         
+        
+        
 //        displayNameLabel.text = user["display_name"] as? String
 //        descriptionLabel.text = user["description"] as? String
         
         let imageFile = user["profile_img"] as! PFFileObject
-        print(imageFile)
         let urlString = imageFile.url!
-        print(urlString)
         let url = URL(string: urlString)!
+        
+
+        print(imageFile)
+        print(urlString)
         print(url)
 //
         profileImageView.af_setImage(withURL: url)

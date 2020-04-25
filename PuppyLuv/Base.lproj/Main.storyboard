@@ -1349,17 +1349,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HaO-3H-tYk">
-                                    <size key="itemSize" width="195" height="169"/>
+                                    <size key="itemSize" width="253" height="196"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="FavorCell" reuseIdentifier="FavorCell" id="akV-sc-wCQ" customClass="FavorCell" customModule="PuppyLuv" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="195" height="169"/>
+                                        <rect key="frame" x="80.666666666666671" y="0.0" width="253" height="196"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="195" height="169"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="cute dog" translatesAutoresizingMaskIntoConstraints="NO" id="USF-Bc-udQ">
@@ -1381,7 +1381,7 @@
                                             <constraint firstAttribute="bottom" secondItem="USF-Bc-udQ" secondAttribute="bottom" id="qiS-QA-SbQ"/>
                                             <constraint firstAttribute="bottom" secondItem="USF-Bc-udQ" secondAttribute="bottom" id="zDS-iJ-hwG"/>
                                         </constraints>
-                                        <size key="customSize" width="195" height="169"/>
+                                        <size key="customSize" width="253" height="196"/>
                                         <connections>
                                             <outlet property="dogImageView" destination="USF-Bc-udQ" id="wlq-27-VmT"/>
                                         </connections>

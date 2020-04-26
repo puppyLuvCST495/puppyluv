@@ -33,19 +33,18 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 - [x] results of the quiz will be shown
 - [ ] there will be a map showing the closest dog shelters
 - [x] user will have a profile page
-- [ ] user can like breed from feed
+- [x] user can like breed from feed
 - [x] user can upload their own puppy images to feed 
 - [x] user can comment on posts in the feed 
-- [ ] user can view a collection view of their liked dogs
+- [x] user can view a collection view of their liked dogs
 - [x] error message shown to user if log in with wrong username or password
 
 **Optional Nice-to-have Stories**
 - [ ] user can change the map to a list view of the closest shelters
-- [ ] user can swipe right/left to like/dislike dog breeds
-- [ ] user can change their profile name in settings
+- [x] user can change their profile name in settings
 - [x] user can change their profile picture in settings
 - [ ] sign in will have a forgot password?
-- [ ] quiz can save progress
+- [x] quiz can save progress
 
 ### 2. Screen Archetypes
 * launch page

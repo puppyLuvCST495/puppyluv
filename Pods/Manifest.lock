@@ -3,6 +3,7 @@ PODS:
   - AlamofireImage (3.6.0):
     - Alamofire (~> 4.9)
   - Bolts/Tasks (1.9.0)
+  - CHCSVParser (2.1.0)
   - Firebase/CoreOnly (6.18.0):
     - FirebaseCore (= 6.6.3)
   - Firebase/Database (6.18.0):
@@ -48,6 +49,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireImage
+  - CHCSVParser
   - Firebase/Database
   - MessageInputBar
   - Parse
@@ -57,6 +59,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Bolts
+    - CHCSVParser
     - Firebase
     - FirebaseAuthInterop
     - FirebaseCore
@@ -75,6 +78,7 @@ SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  CHCSVParser: 3bcc7bdb72111a31222e95d57eacceefe4e537e8
   Firebase: 0490eca762a72e4f1582319539153897f1508dee
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 78276943ad85e616dfa54dafa6c89512987d9d60
@@ -89,6 +93,6 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Parse: c1ad2a04d2cab2b54b6fb7da05f741abf2cf57d1
 
-PODFILE CHECKSUM: 1b25f9d647b9750a7ec369e99bcc96a7641b137a
+PODFILE CHECKSUM: 393f9d1d92a8d7943099b9988491f50ac6d82629
 
 COCOAPODS: 1.9.0

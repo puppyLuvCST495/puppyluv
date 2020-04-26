@@ -102,9 +102,13 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let o = object[indexPath.row]
         let imageUrl = o["Picture"] as! String
         let url = URL(string: imageUrl)!
-        print(o)
-        cell.ResultImage.af_setImage(withURL: url)
+
         
+        cell.ResultImage.af_setImage(withURL: url)
+        cell.info.text = o["Description"] as! String
+        cell.group.text = o["Group"] as! String
+        cell.breed.text = o["Breed"] as! String
+
         
         let userResults = PFObject(className: "UserResults")
         userResults["user"] = PFUser.current()
@@ -119,7 +123,7 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
             }
             
         }
-        
+
         return cell
         
         

@@ -26,38 +26,5 @@ class QuizViewController: UIViewController {
         titleView.layer.cornerRadius=15
         submitButton.layer.cornerRadius=15
         
-       //  var breed = []
-/*
-    }
-          override func viewDidAppear(_ animated: Bool) {
-                    super.viewDidAppear(animated)
-                        let query = PFQuery(className:"Breeds")
-                               query.whereKey("Weight", greaterThanOrEqualTo: "15")
-                              // query.whereKey("Lifespane", contains: "12")
-                          query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
-                              if let error = error {
-                                  // Log details of the failure
-                                  print(error.localizedDescription)
-                              } else if let objects = objects {
-                                  // The find succeeded.
-                                  print("Successfully retrieved \(objects.count) breeds.")
-                                  // Do something with the found objects
-                                  for object in objects {
-                             
-                                  print(object)
-                                   
-                                  }
-                                print("Successfully retrieved \(objects.count) breeds.")
-                              }
-                          }
-                }
-    
-
- 
-    
-
- }
-
-*/
 }
 }

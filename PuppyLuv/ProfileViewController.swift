@@ -44,28 +44,35 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 print(error as Any)
             }
         }
-
-        let imageFile = user["image"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
         
-
-//        print(imageFile)
-//        print(urlString)
-        print(url)
-
-        profileImageView.af_setImage(withURL: url)
-        displayNameLabel.text = user["display_name"] as? String
-        descriptionLabel.text = user["description"] as? String
+        
+        if let imageFile = user["image"] as? PFFileObject {
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            profileImageView.af_setImage(withURL: url)
+            displayNameLabel.text = user["display_name"] as? String
+            descriptionLabel.text = user["description"] as? String
+        } else {
+            profileImageView.image = UIImage(named:"PuppyLuv-Logo")
+            displayNameLabel.text = user["display_name"] as? String
+            descriptionLabel.text = user["description"] as? String
+        }
+                        
+        
     }
     
     
     
     func makeRound(){
-        profileImageView?.layer.cornerRadius = (profileImageView?.frame.size.width ?? 0.0) / 2
-        profileImageView?.clipsToBounds = true
-        profileImageView?.layer.borderWidth = 3.0
-        profileImageView?.layer.borderColor = UIColor.white.cgColor
+//        profileImageView?.layer.cornerRadius = (profileImageView?.frame.size.width ?? 0.0) / 2
+//        profileImageView?.clipsToBounds = true
+//        profileImageView?.layer.borderWidth = 3.0
+//        profileImageView?.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.borderWidth = 2.0
+        profileImageView.layer.masksToBounds = false
+        profileImageView.layer.borderColor = UIColor.white.cgColor
+        profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
+        profileImageView.clipsToBounds = true
     }
     /*
     // MARK: - Navigation

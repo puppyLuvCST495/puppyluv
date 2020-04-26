@@ -113,6 +113,7 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let userResults = PFObject(className: "UserResults")
         userResults["user"] = PFUser.current()
         userResults["results"] = o["Breed"]
+        userResults["picture"] = imageUrl
         
         userResults.saveInBackground { (success, error) in
             if success {

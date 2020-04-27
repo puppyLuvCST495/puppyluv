@@ -5,7 +5,6 @@
 //  Created by Pernille Dahl on 4/26/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
-
 import UIKit
 
 class ProfileMatchCell: UITableViewCell {

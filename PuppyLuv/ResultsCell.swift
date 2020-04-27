@@ -9,7 +9,11 @@
 import UIKit
 
 class ResultsCell: UITableViewCell {
-
+    
+    @IBOutlet weak var info: UILabel!
+    
+    @IBOutlet weak var breed: UILabel!
+    @IBOutlet weak var group: UILabel!
     @IBOutlet weak var ResultImage: UIImageView!
     
     override func awakeFromNib() {

@@ -33,19 +33,18 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 - [x] results of the quiz will be shown
 - [ ] there will be a map showing the closest dog shelters
 - [x] user will have a profile page
-- [ ] user can like breed from feed
+- [x] user can like breed from feed
 - [x] user can upload their own puppy images to feed 
 - [x] user can comment on posts in the feed 
-- [ ] user can view a collection view of their liked dogs
+- [x] user can view a collection view of their liked dogs
 - [x] error message shown to user if log in with wrong username or password
 
 **Optional Nice-to-have Stories**
 - [ ] user can change the map to a list view of the closest shelters
-- [ ] user can swipe right/left to like/dislike dog breeds
-- [ ] user can change their profile name in settings
+- [x] user can change their profile name in settings
 - [x] user can change their profile picture in settings
 - [ ] sign in will have a forgot password?
-- [ ] quiz can save progress
+- [x] quiz can save progress
 
 ### 2. Screen Archetypes
 * launch page
@@ -105,18 +104,15 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 <img src="https://imgur.com/qU201Ad.jpg" width=150> <img src="https://imgur.com/kpJ099A.jpg" width=150> <img src="https://imgur.com/DyPBMKG.jpg" width=150> <img src="https://imgur.com/rQ8KBLq.jpg" width=150> <img src="https://imgur.com/L4LGRlS.jpg" width=150>
 
 ### [BONUS] Interactive Prototype
-<img src='http://g.recordit.co/vH9FGdbYOw.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/Jo522HQLgD.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 
 ### Models
-
+#### Breeds
 | __Property__| __Type__   | __Decription__ |
 |-------------|------------|----------------|
 | ObjectId    | String | Unique id for the users|
-|username     | String | Name the user chooses for their account| 
-|password     |  String|Password for user to access account|
-|email        | String|  Email to access Account|
 |Breed        |String | Dog Breed |
 |Weight       |String | Dog Weight |
 |Lifespan     |String | Potential Dog Lifespan|
@@ -129,10 +125,60 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 | Training    |   String | How easily a dog can be trained  | 
 | Temperament | String |Dogs Personality |
 
+#### User 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|username     | String | Name the user chooses for their account| 
+|password     |  String|Password for user to access account|
+|email        | String|  Email to access Account|
+|display_name | String|  Displayed name on profile|
+|image        | File |  User profile image|
+|description  | String |  Description of the user|
 
-- Parse (User login and log out) 
-- Will most probably use Parse for storing user results and maybe to create databases with info about breeds. 
-(If not might, we might use firebase) 
+#### User 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|username     | String | Name the user chooses for their account| 
+|password     |  String|Password for user to access account|
+|email        | String|  Email to access Account|
+|display_name | String|  Displayed name on profile|
+|image        | File |  User profile image|
+|description  | String |  Description of the user|
+
+#### Comments 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|post        | Pointer | Pointer to the post| 
+|text        | String| The comment |
+|user        | Pointer|  Pointer to the user who commented|
+
+#### DogFeed 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|caption     | String | Caption for the post | 
+|user        | Pointer| Pointer to the user posting |
+|image       | File|  Image to upload to the post |
+|comments    | Array | Array of comments ot the post |
+
+#### LikedDogs 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|user        | Pointer | Pointer to the user| 
+|image       | File| the file of the liked image |
+|liked       | boolean| if liked or not|
+
+#### UserResults 
+| __Property__| __Type__   | __Decription__ |
+|-------------|------------|----------------|
+|ObjectId    | String | Unique id for the users|
+|results     | String | The results from the quiz| 
+|user        | Pointer| The user who took the quiz|
+
 
 ### Networking
 ###### List of network requests by screen

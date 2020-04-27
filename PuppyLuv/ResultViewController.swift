@@ -82,9 +82,9 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
 
         
         cell.ResultImage.af_setImage(withURL: url)
-        cell.info.text = o["Description"] as! String
-        cell.group.text = o["Group"] as! String
-        cell.breed.text = o["Breed"] as! String
+        cell.info.text = o["Description"] as? String
+        cell.group.text = o["Group"] as? String
+        cell.breed.text = o["Breed"] as? String
 
         
         let userResults = PFObject(className: "UserResults")

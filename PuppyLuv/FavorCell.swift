@@ -10,8 +10,6 @@ import UIKit
 
 class FavorCell: UICollectionViewCell {
     
-    
-    
     @IBOutlet weak var dogImageView: UIImageView!
     
     

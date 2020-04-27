@@ -23,17 +23,10 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.delegate = self
         collectionView.dataSource = self
         
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//
-//       layout.minimumLineSpacing = 1
-//       layout.minimumInteritemSpacing = 1
-//
-//       let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2 ) / 3
-//       layout.itemSize = CGSize(width: width, height: width * 1.5)
-        
-        
 
     }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
            self.updateCollectionView()
@@ -46,10 +39,17 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
        }
     
     func updateCollectionView(){
-        let query = PFQuery(className: "LikedDogs")
-        query.includeKey("image")
-        query.limit = 20
         
+        let currentUser = PFUser.current()
+        
+        let query = PFQuery(className: "LikedDogs")
+        query.whereKey("user", equalTo: currentUser as Any)
+        query.whereKey("liked", equalTo: true)
+        query.includeKeys(["image", "liked"])
+        
+    
+        query.limit = 20
+
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 print("YES")
@@ -58,7 +58,7 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
             }else{
                 print("NO")
             }
-            
+
         }
         self.collectionView.reloadData()
     }
@@ -72,7 +72,8 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavorCell", for: indexPath) as! FavorCell
-
+        
+    
         let post = posts[indexPath.item]
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!

@@ -19,6 +19,7 @@
 		A349A94C2435852700C94A41 /* QuestionOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A349A94B2435852700C94A41 /* QuestionOneViewController.swift */; };
 		A35292C72453AAC40083F395 /* FavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35292C62453AAC40083F395 /* FavorCell.swift */; };
 		A35292C92453ABA00083F395 /* FavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35292C82453ABA00083F395 /* FavorViewController.swift */; };
+		A35292CB245643DA0083F395 /* ProfileMatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35292CA245643DA0083F395 /* ProfileMatchCell.swift */; };
 		A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39B9242993FC00E76313 /* SettingViewController.swift */; };
 		A38C39BC24299AED00E76313 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C39BB24299AED00E76313 /* SettingTableViewController.swift */; };
 		A38C79A62444ED86009F96BB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38C79A52444ED85009F96BB /* FeedViewController.swift */; };
@@ -51,6 +52,7 @@
 		A349A94B2435852700C94A41 /* QuestionOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionOneViewController.swift; sourceTree = "<group>"; };
 		A35292C62453AAC40083F395 /* FavorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorCell.swift; sourceTree = "<group>"; };
 		A35292C82453ABA00083F395 /* FavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorViewController.swift; sourceTree = "<group>"; };
+		A35292CA245643DA0083F395 /* ProfileMatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMatchCell.swift; sourceTree = "<group>"; };
 		A38C39B9242993FC00E76313 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A38C39BB24299AED00E76313 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		A38C79A52444ED85009F96BB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				1AA9B7B02450BE3E0005550E /* ResultsCell.swift */,
 				A35292C62453AAC40083F395 /* FavorCell.swift */,
 				A35292C82453ABA00083F395 /* FavorViewController.swift */,
+				A35292CA245643DA0083F395 /* ProfileMatchCell.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
+				A35292CB245643DA0083F395 /* ProfileMatchCell.swift in Sources */,
 				A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */,
 				A38C79AE244A5FDE009F96BB /* CommentCell.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,

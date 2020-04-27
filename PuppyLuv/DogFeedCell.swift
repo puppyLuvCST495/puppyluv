@@ -15,23 +15,16 @@ class DogFeedCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
 
-    @IBOutlet var likeButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
     
-    var objectID:String? = nil
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
     }
     
-    
-    
-    
-//    var delegate: DogFeedCell
-    
     var favorited:Bool = false
-    
     func setFavorite(_ isFavorited:Bool) {
         favorited = isFavorited
         if favorited {
@@ -42,50 +35,20 @@ class DogFeedCell: UITableViewCell {
     }
     
     
-    @IBAction func heartClicked(_ sender: UIButton) {
-
-
-        let toBeFavored = !favorited
+    
+    @IBAction func heartClicked(_ sender: Any) {
+       let toBeFavored = !favorited
        if toBeFavored {
         setFavorite(toBeFavored)
         saveImageToParser()
-        print("favored image ")
+           print("favored image")
        }else{
         setFavorite(toBeFavored)
         dislikeImageToParser()
-        print("disliked images")
+           print("disliked images")
        }
 
     }
-    
-    
-    func updateLikedColumTrue(){
-        
-        let query = PFQuery(className:"DogFeed")
-        
-        query.getObjectInBackground(withId: "Ed7AodAq9G") { (liked: PFObject?, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let liked = liked {
-                print("the image has been updated")
-                liked["liked"] = true
-                liked.saveInBackground()
-            }
-        }
-    }
-    func updateLikedColumFalse(){
-        let query = PFQuery(className:"DogFeed")
-        
-        query.getObjectInBackground(withId: "Ed7AodAq9G" ) { (liked: PFObject?, error: Error?) in
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let liked = liked {
-                liked["liked"] = false
-                liked.saveInBackground()
-            }
-        }
-    }
-    
     
     func saveImageToParser(){
         let dog = PFObject(className:"LikedDogs")
@@ -102,7 +65,6 @@ class DogFeedCell: UITableViewCell {
             } else {
                 // There was a problem, check error.description
                 print("Problem saving")
-                
             }
         }
     }
@@ -123,15 +85,8 @@ class DogFeedCell: UITableViewCell {
                 print("Problem disliking")
             }
         }
-//        query.getObjectInBackground(withId: objectID! ) { (liked: PFObject?, error: Error?) in
-//            if let error = error {
-//                print(error.localizedDescription)
-//            } else if let liked = liked {
-//                liked["liked"] = false
-//                liked.saveInBackground()
-//            }
-//        }
     }
+    
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {

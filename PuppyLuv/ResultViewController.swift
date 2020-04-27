@@ -24,29 +24,16 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
     var shedding = ["Yes":["Regularly","Occasional","Weekly Brushing","Frequent","Occasional Bath/Brush"],
                     "No": ["Infrequent","Seasonal"]]
     
-    
-    
-    
-    //  query .whereKey("playerName", containedIn: names)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-        
-        
-        
-        
         self.tableView.reloadData()
-       
-
-        
-        
-        
         print(allAnswers)
         
-        // Do any additional setup after loading the view.
     }
     
     
@@ -69,12 +56,7 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
             } else if let objects = objects {
                 // The find succeeded.
                 print("Successfully retrieved \(objects.count) breeds.")
-                // Do something with the found objects
-                //for object in objects {
-                
-                
-                //    print(object)
-                //  print("Successfully retrieved \(objects.count) breeds.")
+     
                 self.object = objects
                 self.tableView.reloadData()
                 
@@ -82,17 +64,12 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         }
         
         
-        
-        
-        
     }
-    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return object.count
     }
-    
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -126,9 +103,6 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         }
 
         return cell
-        
-        
-        
         
         
     }

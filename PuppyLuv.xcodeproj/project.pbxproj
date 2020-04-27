@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		018309D424451B6D00271880 /* SettingCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018309D324451B6D00271880 /* SettingCameraViewController.swift */; };
+		1A347FEC24569B0C009FDD19 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A347FEB24569B0C009FDD19 /* MapViewController.swift */; };
 		1AA9B7B12450BE3E0005550E /* ResultsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA9B7B02450BE3E0005550E /* ResultsCell.swift */; };
 		35403BF323FE0DC100795A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF223FE0DC100795A5B /* AppDelegate.swift */; };
 		35403BF523FE0DC100795A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35403BF423FE0DC100795A5B /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		018309D324451B6D00271880 /* SettingCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCameraViewController.swift; sourceTree = "<group>"; };
+		1A347FEB24569B0C009FDD19 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1AA9B7B02450BE3E0005550E /* ResultsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCell.swift; sourceTree = "<group>"; };
 		35403BEF23FE0DC100795A5B /* PuppyLuv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuppyLuv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35403BF223FE0DC100795A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,7 +132,9 @@
 				1AA9B7B02450BE3E0005550E /* ResultsCell.swift */,
 				A35292C62453AAC40083F395 /* FavorCell.swift */,
 				A35292C82453ABA00083F395 /* FavorViewController.swift */,
-				A35292CA245643DA0083F395 /* ProfileMatchCell.swift */,
+
+				1A347FEB24569B0C009FDD19 /* MapViewController.swift */,
+
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -284,6 +288,7 @@
 				A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */,
 				A38C79AE244A5FDE009F96BB /* CommentCell.swift in Sources */,
 				A38E69C82420343300BBD665 /* MainTabController.swift in Sources */,
+				1A347FEC24569B0C009FDD19 /* MapViewController.swift in Sources */,
 				A38C39BA242993FC00E76313 /* SettingViewController.swift in Sources */,
 				35403BF523FE0DC100795A5B /* ViewController.swift in Sources */,
 				A35292C72453AAC40083F395 /* FavorCell.swift in Sources */,

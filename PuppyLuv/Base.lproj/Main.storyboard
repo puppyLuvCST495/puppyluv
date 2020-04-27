@@ -730,65 +730,86 @@
                                 <rect key="frame" x="0.0" y="56" width="414" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-my-Zfn">
-                                        <rect key="frame" x="119.66666666666669" y="1" width="175" height="206.33333333333331"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="175" id="P5o-1R-Wvs"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-zf-BSQ">
                                         <rect key="frame" x="128.66666666666666" y="207.66666666666669" width="156.99999999999997" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of puppy " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-aU-Qvu">
-                                        <rect key="frame" x="30" y="242.66666666666669" width="354" height="20.333333333333314"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Description of puppy " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-aU-Qvu">
+                                        <rect key="frame" x="30" y="242.66666666666669" width="164.33333333333334" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RrI-my-Zfn">
+                                        <rect key="frame" x="115" y="29" width="184" height="170"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="lqf-uS-7Ho"/>
+                                            <constraint firstAttribute="height" constant="171.33000000000001" id="rmB-w2-NkF"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="Yz9-2b-MEf" firstAttribute="bottom" secondItem="pkJ-aU-Qvu" secondAttribute="bottom" constant="17" id="7Wz-EF-Pgp"/>
+                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="centerX" secondItem="H0o-zf-BSQ" secondAttribute="centerX" constant="-0.16666666666662877" id="C9Q-rA-CRQ"/>
                                     <constraint firstItem="pkJ-aU-Qvu" firstAttribute="leading" secondItem="Yz9-2b-MEf" secondAttribute="leading" constant="30" id="EUf-s6-xj1"/>
-                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="centerX" secondItem="b3w-dX-IiO" secondAttribute="centerX" id="IGj-Kc-0b4"/>
-                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="top" secondItem="Yz9-2b-MEf" secondAttribute="top" id="eoE-b9-VhG"/>
+                                    <constraint firstItem="RrI-my-Zfn" firstAttribute="leading" secondItem="Yz9-2b-MEf" secondAttribute="leading" constant="115" id="gYP-hf-jbN"/>
                                     <constraint firstItem="Yz9-2b-MEf" firstAttribute="trailing" secondItem="pkJ-aU-Qvu" secondAttribute="trailing" constant="30" id="ogy-2K-dTH"/>
                                     <constraint firstItem="pkJ-aU-Qvu" firstAttribute="top" secondItem="H0o-zf-BSQ" secondAttribute="bottom" constant="6" id="qHV-LH-vkc"/>
                                     <constraint firstItem="H0o-zf-BSQ" firstAttribute="centerX" secondItem="b3w-dX-IiO" secondAttribute="centerX" id="sep-fK-4Lh"/>
-                                    <constraint firstItem="H0o-zf-BSQ" firstAttribute="top" secondItem="RrI-my-Zfn" secondAttribute="bottom" id="zgl-vw-Lab"/>
+                                    <constraint firstItem="H0o-zf-BSQ" firstAttribute="top" secondItem="RrI-my-Zfn" secondAttribute="bottom" constant="8.3333333333333712" id="zgl-vw-Lab"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Yz9-2b-MEf"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doggie" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-N6-TWi">
-                                <rect key="frame" x="8" y="419" width="201" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-cg-TFe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVB-cg-TFe">
                                 <rect key="frame" x="20" y="358" width="173" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eat dog" translatesAutoresizingMaskIntoConstraints="NO" id="521-OT-a3p">
-                                <rect key="frame" x="8" y="556" width="208" height="128"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N8c-a7-QVd">
+                                <rect key="frame" x="0.0" y="399" width="414" height="443"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wo dog" translatesAutoresizingMaskIntoConstraints="NO" id="upv-SS-Qlz">
-                                <rect key="frame" x="224" y="556" width="182" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dooggg" translatesAutoresizingMaskIntoConstraints="NO" id="SLj-yx-WAG">
-                                <rect key="frame" x="217" y="424" width="189" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileMatchCell" rowHeight="225" id="fjm-UB-4Cl" customClass="ProfileMatchCell" customModule="PuppyLuv" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="225"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fjm-UB-4Cl" id="DKg-Dz-YMW" customClass="ProfileMatchCell" customModule="PuppyLuv" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fX-JA-B7w">
+                                                    <rect key="frame" x="186" y="19" width="192" height="186"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breed Name " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVj-Nw-7z9">
+                                                    <rect key="frame" x="20" y="32" width="142.33333333333337" height="28.666666666666671"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="matchBreedLabel" destination="rVj-Nw-7z9" id="bA0-PE-zw8"/>
+                                            <outlet property="matchImage" destination="4fX-JA-B7w" id="FpD-Hp-k75"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qMd-vO-e4b" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BVB-cg-TFe" secondAttribute="trailing" symbolic="YES" id="9Ex-L3-kHt"/>
+                            <constraint firstItem="BVB-cg-TFe" firstAttribute="top" secondItem="b3w-dX-IiO" secondAttribute="bottom" constant="22" id="AVK-C7-gPt"/>
+                            <constraint firstItem="BVB-cg-TFe" firstAttribute="leading" secondItem="PGp-AZ-gzB" secondAttribute="leadingMargin" id="wh8-MV-jEf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qMd-vO-e4b"/>
                     </view>
                     <navigationItem key="navigationItem" title="PuppyLuv" id="wYN-d2-jgK">
@@ -802,11 +823,12 @@
                         <outlet property="descriptionLabel" destination="pkJ-aU-Qvu" id="pR9-hm-NxL"/>
                         <outlet property="displayNameLabel" destination="H0o-zf-BSQ" id="PsN-2j-EYV"/>
                         <outlet property="profileImageView" destination="RrI-my-Zfn" id="xbj-Ym-Oz5"/>
+                        <outlet property="tableView" destination="N8c-a7-QVd" id="cZh-VX-m4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5707" y="117"/>
+            <point key="canvasLocation" x="5705.7971014492759" y="116.51785714285714"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -1550,12 +1572,11 @@
         <image name="camera.fill" catalog="system" width="64" height="48"/>
         <image name="cameraplaceholder" width="400" height="284"/>
         <image name="cute dog" width="1600" height="1200"/>
-        <image name="doggie" width="1280" height="720"/>
-        <image name="dooggg" width="2048" height="1365"/>
-        <image name="eat dog" width="276" height="183"/>
-        <image name="folder" catalog="system" width="64" height="46"/>
-        <image name="folder.fill" catalog="system" width="64" height="46"/>
-        <image name="heart" catalog="system" width="64" height="54"/>
+
+        <image name="folder" catalog="system" width="128" height="95"/>
+        <image name="folder.fill" catalog="system" width="128" height="95"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+
         <image name="images-1" width="247" height="152"/>
         <image name="map" catalog="system" width="64" height="56"/>
         <image name="notfilledP" width="300" height="279"/>
@@ -1564,8 +1585,8 @@
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
         <image name="questionDog" width="256" height="256"/>
-        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
-        <image name="wo dog" width="275" height="183"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+
     </resources>
     <color key="tintColor" red="0.58254504200000001" green="0.1105979159" blue="0.96084135770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

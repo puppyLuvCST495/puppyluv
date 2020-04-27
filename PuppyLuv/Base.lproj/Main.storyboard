@@ -100,12 +100,12 @@
         <!--Map-->
         <scene sceneID="N7R-ab-Pfz">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="d5F-d5-tLx" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="d5F-d5-tLx" customClass="MapViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ul-od-Oar">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-HX-k9U">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-HX-k9U" customClass="Map">
                                 <rect key="frame" x="0.0" y="41" width="414" height="718"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-zz-IL8">
@@ -129,6 +129,9 @@
                         <viewLayoutGuide key="safeArea" id="tgM-fK-DQZ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="map" catalog="system" id="fK0-y7-iZv"/>
+                    <connections>
+                        <outlet property="mapView" destination="iAk-HX-k9U" id="Nvg-Pk-Qsv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHH-PE-ZBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

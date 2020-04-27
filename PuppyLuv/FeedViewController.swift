@@ -14,10 +14,11 @@ import MessageInputBar
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
     
     let myRefreshControl = UIRefreshControl()
-    
+ 
     @IBOutlet weak var tableView: UITableView!
     
     
+    var objectIDForCell: String! = nil
     let commentBar = MessageInputBar()
     var showCommentBar = false
     var posts = [PFObject]()
@@ -39,7 +40,30 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         myRefreshControl.addTarget(self, action: #selector(updateTableView), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
+    
         
+    }
+    
+    // THE CLICKED CELL with the correct ObjectID!
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let post = posts[indexPath.section]
+            let comment = (post["comments"] as? [PFObject]) ?? []
+//            let liked = (post["liked"]) as? Bool
+            
+            // Getting the object of the post
+//        objectIDForCell = post.objectId
+//        print("i clicked " , objectIDForCell)
+            
+            if indexPath.row == comment.count + 1 {
+                showCommentBar = true
+                becomeFirstResponder()
+                commentBar.inputTextView.becomeFirstResponder()
+                selectedPost = post
+            }
+        }
+    
+    @IBAction func likeButtonClicked(_ sender: Any) {
+        print("like button clicked")
     }
     
     @objc func keyboardWillBeHidden(note: Notification) {
@@ -60,10 +84,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidAppear(animated)
         self.updateTableView()
     }
-    
+
     @objc func updateTableView(){
            let query = PFQuery(className: "DogFeed")
-           query.includeKeys(["user", "comments", "comments.user"])
+           query.includeKeys(["objectId", "user", "comments", "comments.user", "liked"])
            query.limit = 20
            
            query.findObjectsInBackground { (posts, error) in
@@ -71,15 +95,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                    self.posts = posts!
                    self.tableView.reloadData()
                }
-               
+        
            }
            self.tableView.reloadData()
            self.myRefreshControl.endRefreshing()
-           
+    
        }
-    
-    
-    
     
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
            // create the comment
@@ -133,7 +154,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["user"] as! PFUser
             cell.usernameLabel.text = user.username
             cell.captionLabel.text = post["caption"] as? String
-                
+            
+            let liked = post["liked"] as? Bool
+            if liked == false {
+                cell.likeButton.setImage(UIImage(named: "notfilledP"), for: UIControl.State.normal)
+            }else{
+                cell.likeButton.setImage(UIImage(named: "filledP"), for: UIControl.State.normal)
+            }
+            
+                    
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!
             let url = URL(string: urlString)!
@@ -141,6 +170,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.photoView.af_setImage(withURL: url)
             
             return cell
+            
             
         }else if indexPath.row <= comments.count {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
@@ -156,24 +186,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let cell = tableView.dequeueReusableCell(withIdentifier: "AddCommentCell")!
             return cell
         }
-    }
-    
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let post = posts[indexPath.section]
-        let comment = (post["comments"] as? [PFObject]) ?? []
-        
-        
-        if indexPath.row == comment.count + 1 {
-            showCommentBar = true
-            becomeFirstResponder()
-            commentBar.inputTextView.becomeFirstResponder()
-            selectedPost = post
-        }
-        
-
         
     }
+    
+   
     
 
 

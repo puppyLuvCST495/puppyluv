@@ -17,6 +17,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
+    var objectID:String = ""
     
     let commentBar = MessageInputBar()
     var showCommentBar = false
@@ -41,6 +42,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.refreshControl = myRefreshControl
         
     }
+        
     
     @objc func keyboardWillBeHidden(note: Notification) {
         commentBar.inputTextView.text = nil
@@ -121,14 +123,28 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
     }
+    
+//    @objc func likeButtonClicked(sender: UIButton){
+//        let selectedIndex = IndexPath(row: sender.tag, section: 0)
+//        tableView.selectRow(at: selectedIndex, animated: true, scrollPosition: .none)
+//        _ = tableView.cellForRow(at: selectedIndex) as! DogFeedCell
+//        objectID = selectedIndex
+//
+//    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let post = posts[indexPath.section]
         let comments = (post["comments"] as? [PFObject]) ?? []
+    
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DogFeedCell") as! DogFeedCell
+//            cell.likeButton.tag = indexPath.row
+//            cell.likeButton.addTarget(self, action: #selector(likeButtonClicked(sender:)), for: .touchUpInside)
+            
+//            objectID = post.objectId!
+//            print("objectID I want to pass ", objectID)
             
             let user = post["user"] as! PFUser
             cell.usernameLabel.text = user.username
@@ -158,11 +174,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    @IBAction func BtnClick(_ sender : UIButton) {
+        print("Should call and get the ObjectID of clicked row")
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let post = posts[indexPath.section]
         let comment = (post["comments"] as? [PFObject]) ?? []
         
+       objectID = post.objectId!
+        print("i clicked ", objectID)
         
         if indexPath.row == comment.count + 1 {
             showCommentBar = true
@@ -171,10 +194,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             selectedPost = post
         }
         
-
-        
     }
     
-
 
 }

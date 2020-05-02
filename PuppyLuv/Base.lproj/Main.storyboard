@@ -1209,6 +1209,7 @@
                                                     </constraints>
                                                     <state key="normal" image="notfilledP"/>
                                                     <connections>
+                                                        <action selector="BtnClick:" destination="xZY-YN-ufo" eventType="touchUpInside" id="XiZ-lI-8K7"/>
                                                         <action selector="heartClicked:" destination="gaL-fz-59h" eventType="touchUpInside" id="U6X-bi-u7i"/>
                                                     </connections>
                                                 </button>

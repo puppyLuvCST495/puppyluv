@@ -47,7 +47,8 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func updateCollectionView(){
         let query = PFQuery(className: "LikedDogs")
-        query.includeKey("image")
+        query.whereKey("user", equalTo: PFUser.current()!)
+        query.includeKeys(["image", "user", "liked"])
         query.limit = 20
         
         query.findObjectsInBackground { (posts, error) in
@@ -72,15 +73,18 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavorCell", for: indexPath) as! FavorCell
-
         let post = posts[indexPath.item]
-        let imageFile = post["image"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
-        
-        
-        cell.dogImageView.af_setImage(withURL: url)
-        
+        let liked = post["liked"] as? Bool
+        if liked == true{
+            let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            
+            print(url)
+            
+            cell.dogImageView.af_setImage(withURL: url)
+        }
+
         return cell
     }
     

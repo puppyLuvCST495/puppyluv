@@ -18,19 +18,23 @@ class DogFeedCell: UITableViewCell {
     @IBOutlet weak var likeButton: UIButton!
     
     
+    var view = FeedViewController().objectID
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
     }
-    
+        
     var favorited:Bool = false
     func setFavorite(_ isFavorited:Bool) {
         favorited = isFavorited
         if favorited {
             likeButton.setImage(UIImage(named: "filledP"), for: UIControl.State.normal)
+            favorited = true
         }else{
             likeButton.setImage(UIImage(named: "notfilledP"), for: UIControl.State.normal)
+            favorited = false
         }
     }
     
@@ -41,11 +45,12 @@ class DogFeedCell: UITableViewCell {
        if toBeFavored {
         setFavorite(toBeFavored)
         saveImageToParser()
-           print("favored image")
+//        getObjectID()
+        print("favored image, view id ", view)
        }else{
         setFavorite(toBeFavored)
         dislikeImageToParser()
-           print("disliked images")
+        print("disliked images")
        }
 
     }
@@ -68,23 +73,17 @@ class DogFeedCell: UITableViewCell {
             }
         }
     }
-    func dislikeImageToParser(){
-        let dog = PFObject(className:"LikedDogs")
-        let imageData = photoView.image!.pngData()
-        let file = PFFileObject(name: "image.png", data: imageData!)
-        dog["user"] = PFUser.current()
-        dog["image"] = file
-        dog["liked"] = false
-        
-        dog.saveInBackground { (succeeded, error)  in
-            if (succeeded) {
-                // The object has been saved.
-                print("correctly disliked an image")
-            } else {
-                // There was a problem, check error.description
-                print("Problem disliking")
+    func dislikeImageToParser() {
+        let query = PFQuery(className: "LikedDogs")
+        query.getObjectInBackground(withId: "FfWTv07Dt1") { (liked: PFObject?, error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let liked = liked {
+                liked["liked"] = false
+                liked.saveInBackground()
             }
         }
+
     }
     
     

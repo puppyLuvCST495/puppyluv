@@ -90,8 +90,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
   * Next question (when question #n-)
   * Results when finish button pressed (on last question)
   * == *Results* ==
-    * swipe right/left to like/dislike
-    * press given buttons to like/dislike
+    * Will see the result and some information about the matches the user got from the quiz
 * Map
   * List View (and back to map view)
 * Profile

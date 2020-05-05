@@ -8,12 +8,15 @@
 import UIKit
 
 class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
-    
+
+  
+
+    @IBOutlet weak var nextButton: UIButton!
+
     @IBOutlet weak var question1: UITextView!
     @IBOutlet weak var picker: UIPickerView!
     
-    let answers = ["Independent","Easy to Train","Agreeable","May be Stubborn","Eager to Please"]
+    let answers = ["Select One","Independent","Easy to Train","Agreeable","May be Stubborn","Eager to Please"]
     var str = [String]()
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -31,6 +34,11 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
         str = [String]()
         return str.append(answers[row])
+    }
+    
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
     }
     
     
@@ -53,7 +61,9 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
         picker.delegate = self
         picker.dataSource = self
         
+        nextButton.layer.cornerRadius = 10
         
+
         // Do any additional setup after loading the view.
     }
     

@@ -11,13 +11,14 @@ import Parse
 class QuestionFourViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
     
     
+    @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var question4: UITextView!
     
     @IBOutlet weak var picker4: UIPickerView!
     
     var recievedAnswer3 = [String]()
     
-    let answers4 = ["Yes","No"]
+    let answers4 = ["Select One","Yes","No"]
     var str4 = [String]()
     
     
@@ -60,7 +61,9 @@ class QuestionFourViewController: UIViewController,UIPickerViewDataSource, UIPic
         }
         
     }
-    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
+    }
     
     
     override func viewDidLoad() {
@@ -68,6 +71,8 @@ class QuestionFourViewController: UIViewController,UIPickerViewDataSource, UIPic
         
         picker4.delegate = self
         picker4.dataSource = self
+        
+        submitButton.layer.cornerRadius = 10
         
         // Do any additional setup after loading the view.
         print(recievedAnswer3)

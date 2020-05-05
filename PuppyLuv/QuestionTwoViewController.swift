@@ -8,8 +8,10 @@
 import UIKit
 
 class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-    
-    
+
+      
+    @IBOutlet weak var nextButton: UIButton!
+
     
     @IBOutlet weak var question2: UITextView!
     
@@ -17,8 +19,8 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     var recievedAnswer = [String]()
     
-    let answers1 = ["Yes","No"]
-    
+    let answers1 = ["Select One","Yes","No"]
+
     var str1 = [String]()
     
     
@@ -56,8 +58,11 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
         //}
     }
     
-    
-    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -65,6 +70,8 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
         picker2.delegate = self
         picker2.dataSource = self
         
+        nextButton.layer.cornerRadius = 10
+
         print(recievedAnswer)
     }
     

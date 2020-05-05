@@ -31,7 +31,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 - [x] user will have the ability to navigate with a bottom tab bar to: home, quiz, map, and profile
 - [x] user will have the ability to take the quiz
 - [x] results of the quiz will be shown
-- [ ] there will be a map showing the closest dog shelters
+- [x] there will be a map showing the closest dog shelters
 - [x] user will have a profile page
 - [x] user can like breed from feed
 - [x] user can upload their own puppy images to feed 
@@ -90,8 +90,7 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
   * Next question (when question #n-)
   * Results when finish button pressed (on last question)
   * == *Results* ==
-    * swipe right/left to like/dislike
-    * press given buttons to like/dislike
+    * Will see the result and some information about the matches the user got from the quiz
 * Map
   * List View (and back to map view)
 * Profile

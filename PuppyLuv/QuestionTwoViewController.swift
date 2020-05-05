@@ -11,6 +11,7 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
 
       
     @IBOutlet weak var nextButton: UIButton!
+
     
     @IBOutlet weak var question2: UITextView!
     
@@ -19,38 +20,52 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
     var recievedAnswer = [String]()
     
     let answers1 = ["Select One","Yes","No"]
+
     var str1 = [String]()
     
     
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-         return 1
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-             return answers1[row]
-         }
+        return answers1[row]
+    }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return answers1.count
     }
     
-      func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
-          str1 = recievedAnswer
-          return str1.append(answers1[row])
-        }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
+        str1 = recievedAnswer
+        
+        
+        return str1.append(answers1[row] )
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         var threeVC: QuestionThreeViewController = segue.destination as! QuestionThreeViewController
         
-        threeVC.recievedAnswer2 = str1
+        //if str1 == []{
+          //  str1 = recievedAnswer
+            //str1.append("Yes")
+            //threeVC.recievedAnswer2 = str1
+        //}else{
+            threeVC.recievedAnswer2 = str1
+        //}
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 50
     }
 
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         picker2.delegate = self
         picker2.dataSource = self

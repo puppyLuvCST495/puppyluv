@@ -16,6 +16,10 @@ class ResultsCell: UITableViewCell {
     @IBOutlet weak var group: UILabel!
     @IBOutlet weak var ResultImage: UIImageView!
     
+    @IBOutlet weak var temperamentLabel: UILabel!
+    
+    @IBOutlet weak var infoTemperamentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

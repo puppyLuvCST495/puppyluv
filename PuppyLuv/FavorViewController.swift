@@ -12,10 +12,11 @@ import AlamofireImage
 
 class FavorViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    let myRefreshControl = UIRefreshControl()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var posts = [PFObject]()
+    var rows = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +24,8 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.delegate = self
         collectionView.dataSource = self
         
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//
-//       layout.minimumLineSpacing = 1
-//       layout.minimumInteritemSpacing = 1
-//
-//       let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2 ) / 3
-//       layout.itemSize = CGSize(width: width, height: width * 1.5)
+        myRefreshControl.addTarget(self, action: #selector(updateCollectionView), for: .valueChanged)
+        collectionView.refreshControl = myRefreshControl
         
         
 
@@ -45,16 +41,16 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
             }
        }
     
-    func updateCollectionView(){
-        let query = PFQuery(className: "LikedDogs")
-        query.whereKey("user", equalTo: PFUser.current()!)
-        query.includeKeys(["image", "user", "liked"])
+    @objc func updateCollectionView(){
+        let query = PFQuery(className: "LikedByUser")
+        query.whereKey("userLiked", equalTo: PFUser.current()!)
+        query.includeKeys(["post"])
         query.limit = 20
         
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
+        query.findObjectsInBackground { (dbRows, error) in
+            if dbRows != nil {
                 print("YES")
-                self.posts = posts!
+                self.rows = dbRows!
                 self.collectionView.reloadData()
             }else{
                 print("NO")
@@ -62,28 +58,25 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
             
         }
         self.collectionView.reloadData()
+        self.myRefreshControl.endRefreshing()
     }
     
 
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return posts.count
+        return rows.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FavorCell", for: indexPath) as! FavorCell
-        let post = posts[indexPath.item]
-        let liked = post["liked"] as? Bool
-        if liked == true{
-            let imageFile = post["image"] as! PFFileObject
-            let urlString = imageFile.url!
-            let url = URL(string: urlString)!
-            
-            print(url)
-            
-            cell.dogImageView.af_setImage(withURL: url)
-        }
+        let postItem = rows[indexPath.item]["post"] as? PFObject
+        let postImage = postItem?["image"] as! PFFileObject
+        
+        let urlString = postImage.url!
+        let url = URL(string: urlString)!
+
+        cell.dogImageView.af_setImage(withURL: url)
 
         return cell
     }

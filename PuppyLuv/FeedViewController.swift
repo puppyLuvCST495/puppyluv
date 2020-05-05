@@ -61,18 +61,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.updateTableView()
-        
-//        let query = PFQuery(className: "LikedByUser")
-//        query.whereKey("userLiked", equalTo: PFUser.current() as Any)
-//        query.includeKeys(["userLiked", "post", "liked"])
-//
-//        query.findObjectsInBackground { (likedPostByUser, error) in
-//            if likedPostByUser != nil {
-//                self.tableView.reloadData()
-//            }
-//        }
-        
-        
+    
     }
     
     @objc func updateTableView(){

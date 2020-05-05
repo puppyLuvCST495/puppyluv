@@ -85,6 +85,7 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
         cell.info.text = o["Description"] as! String
         cell.group.text = o["Group"] as! String
         cell.breed.text = o["Breed"] as! String
+        cell.infoTemperamentLabel.text = o["Temperament"] as? String
 
         
         let userResults = PFObject(className: "UserResults")

@@ -12,6 +12,7 @@ import AlamofireImage
 
 class FavorViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    let myRefreshControl = UIRefreshControl()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -23,13 +24,8 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
         collectionView.delegate = self
         collectionView.dataSource = self
         
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//
-//       layout.minimumLineSpacing = 1
-//       layout.minimumInteritemSpacing = 1
-//
-//       let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2 ) / 3
-//       layout.itemSize = CGSize(width: width, height: width * 1.5)
+        myRefreshControl.addTarget(self, action: #selector(updateCollectionView), for: .valueChanged)
+        collectionView.refreshControl = myRefreshControl
         
         
 
@@ -45,7 +41,7 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
             }
        }
     
-    func updateCollectionView(){
+    @objc func updateCollectionView(){
         let query = PFQuery(className: "LikedByUser")
         query.whereKey("userLiked", equalTo: PFUser.current()!)
         query.includeKeys(["post"])
@@ -62,6 +58,7 @@ class FavorViewController: UIViewController, UICollectionViewDelegate, UICollect
             
         }
         self.collectionView.reloadData()
+        self.myRefreshControl.endRefreshing()
     }
     
 

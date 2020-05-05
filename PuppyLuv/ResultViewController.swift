@@ -18,8 +18,8 @@ class ResultViewController: UIViewController,UITableViewDelegate, UITableViewDat
     var object = [PFObject]()
     
     var allAnswers = [String]()
-    var age = ["Yes": ["10-12 years","12-15 years","15-17 years","15+ years","13-15 years","11-13 years","14 years", "12-14 years","12-13 years","11-15 years","12-14 years","14-16 years","12 years","15 years","9-15 years"],
-               "No":["6-8 years","7-10 years","9 years","8-11 years"]]
+    var age = ["Yes": ["12-14 years","10-12 years","12-15 years","15+ years","10-15 years","14-15 years","10-13 years","11-13 years","12-13 years","9-14 years","10-14 years","9-11 years","13-15 years","11-16 years","14-16 years","11-14 years","14 years","12+ years","9-12 years","16 years","15 years","9-15 years","12 years","14-17 years","14-17 years","15-17 years","8-12","13-18"],
+               "No":["8-10 years","7-10 years","7-9 years","8-11 years","9 years","6-8 years","5-8 years"]]
     
     var shedding = ["Yes":["Regularly","Occasional","Weekly Brushing","Frequent","Occasional Bath/Brush"],
                     "No": ["Infrequent","Seasonal"]]

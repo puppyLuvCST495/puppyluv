@@ -42,6 +42,8 @@ class QuestionFourViewController: UIViewController,UIPickerViewDataSource, UIPic
         var results: ResultViewController = segue.destination as! ResultViewController
         
         
+        
+        
         results.allAnswers = str4
         
         let userResults = PFUser.current()!

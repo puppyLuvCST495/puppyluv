@@ -14,7 +14,10 @@ class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPi
     @IBOutlet weak var picker3: UIPickerView!
     var recievedAnswer2 = [String]()
     
-    let answers3 = ["Regular Exercise","Energetic","Needs lots of Activity","Calm","Regular"]
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    let answers3 = ["Select One","Regular Exercise","Energetic","Needs lots of Activity","Calm","Regular"]
     var str3 = [String]()
     
     
@@ -41,13 +44,17 @@ class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPi
         fourVC.recievedAnswer3 = str3
     }
     
-    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 50
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         picker3.delegate = self
         picker3.dataSource = self
+        
+        nextButton.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
         print(recievedAnswer2)

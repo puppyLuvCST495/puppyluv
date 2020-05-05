@@ -18,9 +18,11 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
     var recievedAnswer = [String]()
     
     let answers1 = ["Yes","No"]
+    
     var str1 = [String]()
-    
-    
+     
+           
+  
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
          return 1
     }
@@ -35,13 +37,23 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
     
       func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
           str1 = recievedAnswer
-          return str1.append(answers1[row])
+        
+     
+        return str1.append(answers1[row] )
         }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+
         var threeVC: QuestionThreeViewController = segue.destination as! QuestionThreeViewController
         
-        threeVC.recievedAnswer2 = str1
+        if str1 == []{
+            str1 = recievedAnswer
+            str1.append("Yes")
+            threeVC.recievedAnswer2 = str1
+        }else{
+             threeVC.recievedAnswer2 = str1
+        }
     }
     
     
@@ -49,6 +61,7 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
         picker2.delegate = self
         picker2.dataSource = self
 

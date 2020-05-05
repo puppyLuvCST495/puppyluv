@@ -148,6 +148,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["user"] as! PFUser
             cell.usernameLabel.text = user.username
             cell.captionLabel.text = post["caption"] as? String
+            
+            let likeByUserRecord = PFQuery(className: "LikedByUser")
+            likeByUserRecord
+                .whereKey("userLiked" , equalTo: PFUser.current())
+                .whereKey("post", equalTo: post)
+                .getFirstObjectInBackground {
+                    (obj,error) in
+                    if obj == nil {
+                        cell.likeButton.setImage(UIImage(named: "notfilledP"), for: UIControl.State.normal)
+                    } else {
+                        cell.likeButton.setImage(UIImage(named: "filledP"), for: UIControl.State.normal)
+                    }
+            }
                 
             let imageFile = post["image"] as! PFFileObject
             let urlString = imageFile.url!

@@ -61,6 +61,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.updateTableView()
+        
+//        let query = PFQuery(className: "LikedByUser")
+//        query.whereKey("userLiked", equalTo: PFUser.current() as Any)
+//        query.includeKeys(["userLiked", "post", "liked"])
+//
+//        query.findObjectsInBackground { (likedPostByUser, error) in
+//            if likedPostByUser != nil {
+//                self.tableView.reloadData()
+//            }
+//        }
+        
+        
     }
     
     @objc func updateTableView(){
@@ -73,7 +85,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                    self.posts = posts!
                    self.tableView.reloadData()
                }
-               
            }
            self.tableView.reloadData()
            self.myRefreshControl.endRefreshing()
@@ -116,7 +127,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let comments = (post["comments"] as? [PFObject]) ?? []
         
         return comments.count + 2
-       }
+    }
     
     
     
@@ -124,27 +135,15 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return posts.count
     }
     
-//    @objc func likeButtonClicked(sender: UIButton){
-//        let selectedIndex = IndexPath(row: sender.tag, section: 0)
-//        tableView.selectRow(at: selectedIndex, animated: true, scrollPosition: .none)
-//        _ = tableView.cellForRow(at: selectedIndex) as! DogFeedCell
-//        objectID = selectedIndex
-//
-//    }
+
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let post = posts[indexPath.section]
         let comments = (post["comments"] as? [PFObject]) ?? []
-    
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "DogFeedCell") as! DogFeedCell
-//            cell.likeButton.tag = indexPath.row
-//            cell.likeButton.addTarget(self, action: #selector(likeButtonClicked(sender:)), for: .touchUpInside)
-            
-//            objectID = post.objectId!
-//            print("objectID I want to pass ", objectID)
             
             let user = post["user"] as! PFUser
             cell.usernameLabel.text = user.username
@@ -174,18 +173,28 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    @IBAction func BtnClick(_ sender : UIButton) {
-        print("Should call and get the ObjectID of clicked row")
-        
-    }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // UI
         let post = posts[indexPath.section]
-        let comment = (post["comments"] as? [PFObject]) ?? []
+        let cell = tableView.cellForRow(at: indexPath) as? DogFeedCell
+        cell?.heartClicked();
         
-       objectID = post.objectId!
-        print("i clicked ", objectID)
+        
+        let comment = (post["comments"] as? [PFObject]) ?? []
+       
+        let likeByUserRecord = PFQuery(className: "LikedByUser")
+        likeByUserRecord
+            .whereKey("userLiked" , equalTo: PFUser.current())
+            .whereKey("post", equalTo: post)
+            .getFirstObjectInBackground {
+                (obj,error) in
+                if obj == nil {
+                    self.addToDb(post)
+                } else {
+                    obj?.deleteInBackground()
+                }
+        }
         
         if indexPath.row == comment.count + 1 {
             showCommentBar = true
@@ -196,5 +205,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    func addToDb(_ post:PFObject){
+        let likedByUser = PFObject(className: "LikedByUser")
+        likedByUser["userLiked"] = PFUser.current()
+        likedByUser["post"] = post
+        post.add(likedByUser, forKey: "likedbyuser")
+        post.saveInBackground {(success, error) in
+            if success {
+                print("Sucess saving liked user")
+            }else {
+                print("Error saving liked user")
+            }
+        }
+    }
 
 }

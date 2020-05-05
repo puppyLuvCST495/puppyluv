@@ -103,7 +103,8 @@ PuppyLuv is an app that helps dog-finders decide what dog is perfect for them. T
 <img src="https://imgur.com/qU201Ad.jpg" width=150> <img src="https://imgur.com/kpJ099A.jpg" width=150> <img src="https://imgur.com/DyPBMKG.jpg" width=150> <img src="https://imgur.com/rQ8KBLq.jpg" width=150> <img src="https://imgur.com/L4LGRlS.jpg" width=150>
 
 ### [BONUS] Interactive Prototype
-<img src='https://imgflip.com/gif/40576s' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<div style="width:260px;max-width:100%;"><div style="height:0;padding-bottom:199.23%;position:relative;"><iframe width="260" height="518" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/40576s"></iframe></div><p><a href="https://imgflip.com/gif/40576s">via Imgflip</a></p></div>
+// <img src='https://imgflip.com/gif/40576s' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 

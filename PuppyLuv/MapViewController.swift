@@ -13,7 +13,7 @@ import AlamofireImage
 class MapViewController: UIViewController, MKMapViewDelegate {
   @IBOutlet weak var mapView: MKMapView!
   
-  var shelters = [PFObject]()
+  var shelters = [PFileObject]()
 
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)

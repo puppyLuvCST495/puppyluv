@@ -41,13 +41,13 @@ class QuestionThreeViewController: UIViewController,UIPickerViewDataSource, UIPi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var fourVC: QuestionFourViewController = segue.destination as! QuestionFourViewController
         
-        //if str3 == []{
-          //  str3 = recievedAnswer2
-           // str3.append("Yes")
-            //fourVC.recievedAnswer3 = str3
-        //}else{
+        if str3==[]{
+            str3 = recievedAnswer2
+            str3.append("Regular")
             fourVC.recievedAnswer3 = str3
-        //}
+        }else{
+            fourVC.recievedAnswer3 = str3
+        }
         
         
     }

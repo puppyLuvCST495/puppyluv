@@ -49,13 +49,13 @@ class QuestionTwoViewController: UIViewController, UIPickerViewDataSource, UIPic
         
         var threeVC: QuestionThreeViewController = segue.destination as! QuestionThreeViewController
         
-        //if str1 == []{
-          //  str1 = recievedAnswer
-            //str1.append("Yes")
-            //threeVC.recievedAnswer2 = str1
-        //}else{
+        if str1==[]{
+            str1 = recievedAnswer
+            str1.append("Yes")
             threeVC.recievedAnswer2 = str1
-        //}
+        }else{
+            threeVC.recievedAnswer2 = str1
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {

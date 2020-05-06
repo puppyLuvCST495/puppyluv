@@ -814,7 +814,7 @@
             </objects>
             <point key="canvasLocation" x="1596" y="117"/>
         </scene>
-        <!--PuppyLuv-->
+        <!--Profile-->
         <scene sceneID="JIy-re-uYa">
             <objects>
                 <viewController id="brY-6I-7tg" customClass="ProfileViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
@@ -895,6 +895,7 @@
                                         <connections>
                                             <outlet property="matchBreedLabel" destination="rVj-Nw-7z9" id="bA0-PE-zw8"/>
                                             <outlet property="matchImage" destination="4fX-JA-B7w" id="FpD-Hp-k75"/>
+                                            <segue destination="xnZ-Td-ZEC" kind="show" id="kgh-W3-g9z"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -908,7 +909,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qMd-vO-e4b"/>
                     </view>
-                    <navigationItem key="navigationItem" title="PuppyLuv" id="wYN-d2-jgK">
+                    <navigationItem key="navigationItem" title="Profile" id="wYN-d2-jgK">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="5VO-vM-Xd9">
                             <connections>
                                 <segue destination="dzZ-VT-cuq" kind="show" id="Kf3-hL-y6p"/>
@@ -925,6 +926,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udy-x6-5nI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5705.7971014492759" y="116.51785714285714"/>
+        </scene>
+        <!--Profile Detail View Controller-->
+        <scene sceneID="dy2-ia-4ux">
+            <objects>
+                <viewController id="xnZ-Td-ZEC" customClass="ProfileDetailViewController" customModule="PuppyLuv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sgm-Dn-IX4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="apl-h8-IoJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tUC-CE-Q23"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WzR-7p-JOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6500" y="408"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="DnQ-Gq-E1N">
@@ -949,7 +966,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ag-xH-ZHs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6459" y="117"/>
+            <point key="canvasLocation" x="6500" y="-279"/>
         </scene>
         <!--Setting Table View Controller-->
         <scene sceneID="fXP-Hp-WNd">
@@ -1107,7 +1124,7 @@
                 <tapGestureRecognizer id="SOz-vc-lXX"/>
                 <tapGestureRecognizer id="Dha-cN-HAj"/>
             </objects>
-            <point key="canvasLocation" x="7294.9275362318849" y="144.97767857142856"/>
+            <point key="canvasLocation" x="7179" y="-279"/>
         </scene>
         <!--Setting Camera View Controller-->
         <scene sceneID="g9a-dj-uZM">
@@ -1205,7 +1222,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="8050.0000000000009" y="153.01339285714286"/>
+            <point key="canvasLocation" x="7869" y="-279"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="EYG-eF-Agn">
@@ -1437,7 +1454,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5932" y="834"/>
+            <point key="canvasLocation" x="5235" y="1533"/>
         </scene>
         <!--Likes-->
         <scene sceneID="CLL-Gq-Sc8">

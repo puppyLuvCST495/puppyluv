@@ -31,6 +31,7 @@
 		A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C524202F2300BBD665 /* HomeViewController.swift */; };
 		A38E69C82420343300BBD665 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C72420343300BBD665 /* MainTabController.swift */; };
 		A38E69CA24204A1F00BBD665 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E69C924204A1F00BBD665 /* ProfileViewController.swift */; };
+		A3E34A0224633EE700C1FEC6 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E34A0124633EE700C1FEC6 /* ProfileDetailViewController.swift */; };
 		A3F28559244CF60C00FC6329 /* QuestionTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F28558244CF60C00FC6329 /* QuestionTwoViewController.swift */; };
 		A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */; };
 		A3F2855D244CF62D00FC6329 /* QuestionFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */; };
@@ -65,6 +66,7 @@
 		A38E69C524202F2300BBD665 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A38E69C72420343300BBD665 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A38E69C924204A1F00BBD665 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A3E34A0124633EE700C1FEC6 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
 		A3F28558244CF60C00FC6329 /* QuestionTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTwoViewController.swift; sourceTree = "<group>"; };
 		A3F2855A244CF61E00FC6329 /* QuestionThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionThreeViewController.swift; sourceTree = "<group>"; };
 		A3F2855C244CF62D00FC6329 /* QuestionFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionFourViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				A35292C82453ABA00083F395 /* FavorViewController.swift */,
 				1A347FEB24569B0C009FDD19 /* MapViewController.swift */,
 				A35292D0245788C10083F395 /* ProfileMatchCell.swift */,
+				A3E34A0124633EE700C1FEC6 /* ProfileDetailViewController.swift */,
 			);
 			path = PuppyLuv;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A349A94C2435852700C94A41 /* QuestionOneViewController.swift in Sources */,
 				A38E69C624202F2300BBD665 /* HomeViewController.swift in Sources */,
 				A349A94824355CA900C94A41 /* QuizViewController.swift in Sources */,
+				A3E34A0224633EE700C1FEC6 /* ProfileDetailViewController.swift in Sources */,
 				A35292D1245788C10083F395 /* ProfileMatchCell.swift in Sources */,
 				A38E69C424202E2F00BBD665 /* LoginViewController.swift in Sources */,
 				A3F2855B244CF61E00FC6329 /* QuestionThreeViewController.swift in Sources */,

@@ -13,6 +13,7 @@ import Parse
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
     
     var matches = [PFObject]()
+//    var matches: [[String:Any]]!
     
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var displayNameLabel: UILabel!
@@ -91,7 +92,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 }
                 
             }
-//            self.tableView.reloadData()
+            self.tableView.reloadData()
         }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -114,12 +115,29 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         cell.matchBreedLabel.text! = match["results"] as! String
         cell.matchImage.af_setImage(withURL: url)
     
-//        print(url)
         print(match["results"] as! String)
 
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("loading up detail screen")
+        
+        // Find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        let dogMatch = matches[indexPath.row]
+        
+        // pass the selected movie to the details view
+        let detailsViewController = segue.destination as! ProfileDetailViewController
+//        detailsViewController.match = dogMatch 
+        
+        
+        
+        
+        
+    }
     
     
     

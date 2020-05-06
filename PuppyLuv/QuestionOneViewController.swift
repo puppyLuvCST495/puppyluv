@@ -37,13 +37,12 @@ class QuestionOneViewController: UIViewController, UIPickerViewDataSource, UIPic
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var secondVC: QuestionTwoViewController = segue.destination as! QuestionTwoViewController
         
-       // if str == []{
-         //   str = answers
-           // str.append("Yes")
-            //secondVC.recievedAnswer = str
-        //}else{
+        if str == []{
+            str.append("Independent")
             secondVC.recievedAnswer = str
-        //}
+        }else{
+            secondVC.recievedAnswer = str
+        }
         
     }
     

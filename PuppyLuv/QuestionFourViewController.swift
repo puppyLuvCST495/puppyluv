@@ -41,10 +41,16 @@ class QuestionFourViewController: UIViewController,UIPickerViewDataSource, UIPic
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         var results: ResultViewController = segue.destination as! ResultViewController
         
+        if str4==[]{
+                   str4 = recievedAnswer3
+                   str4.append("Yes")
+                  results.allAnswers = str4
+               }else{
+                   results.allAnswers = str4
+               }
         
         
         
-        results.allAnswers = str4
         
         let userResults = PFUser.current()!
         let deleteQuery = PFQuery(className:"UserResults")

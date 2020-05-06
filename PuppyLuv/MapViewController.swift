@@ -5,17 +5,18 @@
 //  Created by Rosario on 4/26/20.
 //  Copyright © 2020 Athena Enosara. All rights reserved.
 //
-
 import UIKit
 import MapKit
 import Parse
 import AlamofireImage
+
 class MapViewController: UIViewController, MKMapViewDelegate {
   @IBOutlet weak var mapView: MKMapView!
   
-  var shelters = [PFileObject]()
+ var shelters = [PFObject]()
 
   override func viewDidAppear(_ animated: Bool) {
+        
     super.viewDidAppear(animated)
     
     let shelterResults = PFQuery(className: "Location")
@@ -52,4 +53,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     }
     mapView.showAnnotations(annotations,animated: true)
   }
+
 }
+

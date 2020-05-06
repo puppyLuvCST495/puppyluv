@@ -80,6 +80,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @objc func updateTableView(){
         let query = PFQuery(className: "UserResults")
+        query.whereKey("user", equalTo: PFUser.current())
             query.includeKeys(["user", "results", "picture"])
             query.limit = 10
             
@@ -90,7 +91,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 }
                 
             }
-            self.tableView.reloadData()
+//            self.tableView.reloadData()
         }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

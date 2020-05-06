@@ -108,23 +108,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-HX-k9U" customClass="Map">
                                 <rect key="frame" x="0.0" y="41" width="414" height="718"/>
                             </mapView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ug4-zz-IL8">
-                                <rect key="frame" x="235" y="5" width="159" height="32"/>
-                                <segments>
-                                    <segment title="Map View"/>
-                                    <segment title="List View"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.95888036489999995" green="0.95967108010000002" blue="0.94192779059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iAk-HX-k9U" firstAttribute="top" secondItem="Ug4-zz-IL8" secondAttribute="bottom" constant="5" id="Nc0-Kt-2MW"/>
-                            <constraint firstAttribute="trailing" secondItem="Ug4-zz-IL8" secondAttribute="trailing" constant="20" symbolic="YES" id="O6O-HI-uUS"/>
-                            <constraint firstItem="Ug4-zz-IL8" firstAttribute="leading" secondItem="tgM-fK-DQZ" secondAttribute="leading" constant="235" id="OhG-2u-5la"/>
+                            <constraint firstItem="iAk-HX-k9U" firstAttribute="top" secondItem="tgM-fK-DQZ" secondAttribute="top" constant="41" id="3f8-li-Rw3"/>
                             <constraint firstItem="iAk-HX-k9U" firstAttribute="leading" secondItem="tgM-fK-DQZ" secondAttribute="leading" id="aoT-bt-6JU"/>
                             <constraint firstItem="iAk-HX-k9U" firstAttribute="trailing" secondItem="tgM-fK-DQZ" secondAttribute="trailing" id="kpw-l5-a6v"/>
                             <constraint firstItem="iAk-HX-k9U" firstAttribute="bottom" secondItem="tgM-fK-DQZ" secondAttribute="bottom" id="m2P-e9-df4"/>
-                            <constraint firstItem="Ug4-zz-IL8" firstAttribute="top" secondItem="tgM-fK-DQZ" secondAttribute="top" constant="5" id="tIg-nh-zTK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tgM-fK-DQZ"/>
                     </view>

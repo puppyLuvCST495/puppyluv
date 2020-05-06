@@ -31,6 +31,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         // Do any additional setup after loading the view.
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.updateTableView()
@@ -120,19 +121,35 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         return cell
     }
     
+    
+    @IBAction func settingTapped(_ sender: Any) {
+        performSegue(withIdentifier: "setting", sender: self)
+
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("loading up detail screen")
+//        if(segue.identifier == "setting"){
+////                performSegue(withIdentifier: "setting", sender: self)
+//            
+//        }
+        if(segue.identifier == "details"){
+            print("loading up detail screen")
+            // Find the selected movie
+            let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: cell)
+            
+            let dogMatch = matches[indexPath!.row]
+            
+            // pass the selected movie to the details view
+            let detailsViewController: ProfileDetailViewController = segue.destination as! ProfileDetailViewController
+            detailsViewController.match = dogMatch
+        }
+            
+         
+       
         
-        // Find the selected movie
-        let cell = sender as! UITableViewCell
-        let indexPath = tableView.indexPath(for: cell)!
-        
-        let dogMatch = matches[indexPath.row]
-        
-        // pass the selected movie to the details view
-        let detailsViewController: ProfileDetailViewController = segue.destination as! ProfileDetailViewController
-        detailsViewController.match = dogMatch
-//        detailsViewController.match = matches
+
     
         
     }

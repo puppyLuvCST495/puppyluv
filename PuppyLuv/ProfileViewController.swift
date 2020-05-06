@@ -130,12 +130,10 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         let dogMatch = matches[indexPath.row]
         
         // pass the selected movie to the details view
-        var detailsViewController: ProfileDetailViewController = segue.destination as! ProfileDetailViewController
-//        detailsViewController.match = dogMatch 
-        detailsViewController.match = matches
-        
-        
-        
+        let detailsViewController: ProfileDetailViewController = segue.destination as! ProfileDetailViewController
+        detailsViewController.match = dogMatch
+//        detailsViewController.match = matches
+    
         
     }
     

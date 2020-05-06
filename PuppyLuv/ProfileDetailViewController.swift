@@ -51,6 +51,9 @@ class ProfileDetailViewController: UIViewController {
         let imageUrl = match!["picture"] as! String
         let url = URL(string: imageUrl)!
         breedImage.af_setImage(withURL: url)
+        
+        
+        
          
         
         // Do any additional setup after loading the view.
@@ -58,7 +61,8 @@ class ProfileDetailViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
            super.viewDidAppear(animated)
            self.fillIn()
-       
+
+            
        }
     
     func fillIn(){
@@ -69,12 +73,18 @@ class ProfileDetailViewController: UIViewController {
         query.findObjectsInBackground { (dogs, error) in
             if dogs != nil {
                 self.matches = dogs!
-                print(dogs!)
+//                print(dogs![0]["Group"])
+                self.groupLabel.text = dogs![0]["Group"] as? String
+                self.groominglabel.text =  dogs![0]["Grooming"] as? String
+                self.sheddinglabel.text =  dogs![0]["Shedding"] as? String
+                self.weightLabel.text =  dogs![0]["Weight"] as? String
+                self.energyLabel.text =  dogs![0]["Engery"] as? String
+                self.descriptionLabel.text =  dogs![0]["Description"] as? String
                 
             }
-            
         }
-//        groupLabel.text = dogs[match["Group"]]
+        
+        
         
     }
     

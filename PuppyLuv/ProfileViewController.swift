@@ -131,7 +131,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if(segue.identifier == "setting"){
 ////                performSegue(withIdentifier: "setting", sender: self)
-//            
+//
 //        }
         if(segue.identifier == "details"){
             print("loading up detail screen")

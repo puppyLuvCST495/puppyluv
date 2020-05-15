@@ -3,7 +3,7 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Project Objective](#Project-Objective)
+2. [Project Objective](#Product-Spec)
 3. [Paper Mockups](#Paper-MockUps)
 4. [Schema](#Schema)
 

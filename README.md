@@ -1,7 +1,7 @@
 # PuppyLuv
 ### <a href="https://youtu.be/BGHE8PksIs8">App Demo Video</a>
 
-## Table of Contents
+## Table of Content
 1. [Overview](#Overview)
 2. [Project Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
